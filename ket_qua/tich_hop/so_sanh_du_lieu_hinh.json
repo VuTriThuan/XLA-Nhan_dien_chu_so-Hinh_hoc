@@ -1,0 +1,57 @@
+{
+  "mo_ta": "Cùng kiến trúc/công thức/hạt/tiền xử lý; chỉ khác bộ sinh dữ liệu. Mô hình phụ huấn luyện trong thư mục tạm.",
+  "so_anh_pil_moi_ho": 160,
+  "ho_hinh": [
+    "tron",
+    "tam_giac_deu",
+    "tam_giac_vuong",
+    "tam_giac_bat_ky",
+    "chu_nhat_vua",
+    "chu_nhat_dai"
+  ],
+  "ket_qua": {
+    "don_gian_4500": {
+      "test_du_lieu_don_gian": 1.0,
+      "test_du_lieu_da_dang": 0.9688888888888889,
+      "stress_da_dang": 0.8033333333333333,
+      "ve_pil_theo_ho": {
+        "tron": 1.0,
+        "tam_giac_deu": 1.0,
+        "tam_giac_vuong": 1.0,
+        "tam_giac_bat_ky": 1.0,
+        "chu_nhat_vua": 1.0,
+        "chu_nhat_dai": 0.4875
+      },
+      "ve_pil_trung_binh": 0.9145833333333333
+    },
+    "da_dang_4500": {
+      "test_du_lieu_don_gian": 0.9985185185185185,
+      "test_du_lieu_da_dang": 0.994567901234568,
+      "stress_da_dang": 0.8533333333333334,
+      "ve_pil_theo_ho": {
+        "tron": 1.0,
+        "tam_giac_deu": 1.0,
+        "tam_giac_vuong": 1.0,
+        "tam_giac_bat_ky": 0.98125,
+        "chu_nhat_vua": 1.0,
+        "chu_nhat_dai": 1.0
+      },
+      "ve_pil_trung_binh": 0.9968750000000001
+    },
+    "da_dang_13500 (mô hình chính)": {
+      "test_du_lieu_don_gian": 1.0,
+      "test_du_lieu_da_dang": 0.997037037037037,
+      "stress_da_dang": 0.9,
+      "ve_pil_theo_ho": {
+        "tron": 1.0,
+        "tam_giac_deu": 1.0,
+        "tam_giac_vuong": 0.99375,
+        "tam_giac_bat_ky": 0.99375,
+        "chu_nhat_vua": 1.0,
+        "chu_nhat_dai": 0.9875
+      },
+      "ve_pil_trung_binh": 0.9958333333333332
+    }
+  },
+  "luu_y": "Mọi bộ đo là ảnh tổng hợp; bộ vẽ PIL cùng họ hình với dữ liệu đa dạng nên đo khả năng tổng quát hóa sang bộ vẽ khác, không phải sang hình người vẽ thật hay hình lạ. Một hạt mỗi cấu hình."
+}

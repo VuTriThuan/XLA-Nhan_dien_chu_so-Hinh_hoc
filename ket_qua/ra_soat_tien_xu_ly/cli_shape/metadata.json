@@ -1,0 +1,20 @@
+{
+  "mode": "shape",
+  "bbox": [
+    10,
+    8,
+    86,
+    77
+  ],
+  "threshold": 128,
+  "polarity": "dark",
+  "edge_dark_fraction": 0.0,
+  "shape": [
+    64,
+    64
+  ],
+  "range": [
+    0.0,
+    1.0
+  ]
+}

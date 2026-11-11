@@ -1,0 +1,84 @@
+{
+  "nguon": "https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz",
+  "tai_lieu_nguon": "https://keras.io/api/datasets/mnist/",
+  "sha256_bo_du_lieu": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1",
+  "sha256_chia_tap": "6862170d1269d9d83f2348b02c1c97272e8d8e0d802cc213443f03cffd920418",
+  "hat_chia": 20261109,
+  "so_train": 54000,
+  "so_validation": 6000,
+  "so_test": 10000,
+  "kich_thuoc_anh": [
+    28,
+    28
+  ],
+  "chuan_hoa": "float32 / 255; không trừ mean/chia std; giữ căn chỉnh gốc của MNIST",
+  "so_luong_moi_lop": [
+    {
+      "chu_so": 0,
+      "train": 5331,
+      "validation": 592,
+      "test": 980
+    },
+    {
+      "chu_so": 1,
+      "train": 6068,
+      "validation": 674,
+      "test": 1135
+    },
+    {
+      "chu_so": 2,
+      "train": 5362,
+      "validation": 596,
+      "test": 1032
+    },
+    {
+      "chu_so": 3,
+      "train": 5518,
+      "validation": 613,
+      "test": 1010
+    },
+    {
+      "chu_so": 4,
+      "train": 5258,
+      "validation": 584,
+      "test": 982
+    },
+    {
+      "chu_so": 5,
+      "train": 4879,
+      "validation": 542,
+      "test": 892
+    },
+    {
+      "chu_so": 6,
+      "train": 5326,
+      "validation": 592,
+      "test": 958
+    },
+    {
+      "chu_so": 7,
+      "train": 5638,
+      "validation": 627,
+      "test": 1028
+    },
+    {
+      "chu_so": 8,
+      "train": 5266,
+      "validation": 585,
+      "test": 974
+    },
+    {
+      "chu_so": 9,
+      "train": 5354,
+      "validation": 595,
+      "test": 1009
+    }
+  ],
+  "so_anh_trung_pixel_giua_cac_tap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "chinh_sach_test": "10.000 ảnh test chính thức giữ nguyên, không dùng để chọn checkpoint hay mô hình",
+  "giay_phep": "CC BY-SA 3.0; Yann LeCun và Corinna Cortes"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "tep": "hinh_tron.png",
+    "nguon": "tập test tổng hợp (không phải ảnh người vẽ)",
+    "chi_so": 11479,
+    "lop": "tron"
+  },
+  {
+    "tep": "hinh_tam_giac.png",
+    "nguon": "tập test tổng hợp (không phải ảnh người vẽ)",
+    "chi_so": 11475,
+    "lop": "tam_giac"
+  },
+  {
+    "tep": "hinh_chu_nhat.png",
+    "nguon": "tập test tổng hợp (không phải ảnh người vẽ)",
+    "chi_so": 11477,
+    "lop": "chu_nhat"
+  }
+]

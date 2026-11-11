@@ -1,0 +1,110 @@
+\chapter{Ứng dụng và đánh giá cả hệ thống}
+\label{chuong:tichhop}
+
+\section{Ứng dụng web}
+Ứng dụng chạy cục bộ (máy chủ chỉ lắng nghe địa chỉ \texttt{127.0.0.1}, không gửi ảnh ra ngoài) bằng lệnh \texttt{python3 ung\_dung.py}. Người dùng chọn bài toán, vẽ trên khung hoặc tải, kéo thả,
+dán ảnh; ứng dụng hiển thị lớp dự đoán, điểm softmax của mọi lớp và ảnh sau từng bước tiền xử lý (xám, lọc, Otsu, mặt nạ, cắt, thu nhỏ, đầu vào CNN $28\times28$), kèm các tùy chọn cực tính, lọc trung vị
+và chỉ giữ thành phần lớn nhất. Ảnh lỗi (trống, không tách được đối tượng, nét quá mảnh) trả về thông báo giải thích thay vì kết quả. Ảnh chụp lớn được thu nhỏ trước khi xử lý.
+Kiểm thử đã chạy máy chủ thật trên cổng tạm cho các luồng nhận dạng, tùy chọn, yêu cầu sai và thu ảnh.
+
+\section{Đường qua tiền xử lý thống nhất với ảnh MNIST}
+\label{muc:duongtienxuly}
+CNN chữ số được huấn luyện trên ảnh MNIST gốc, vốn căn theo trọng tâm. Ứng dụng lại cắt theo hộp bao, thu phóng về 20 px và căn theo tâm hộp bao. Để đo cái giá của sự khác biệt này,
+cùng 1\,000 ảnh test MNIST (100 ảnh mỗi chữ số) được đưa vào mạng theo hai đường: trực tiếp ($99{,}0\%$) và qua tiền xử lý thống nhất ($97{,}6\%$). Chênh lệch $1{,}4$ điểm phần trăm này là chi phí của việc căn theo hộp bao
+thay vì trọng tâm cộng với phép thu phóng; căn theo trọng tâm cho chữ số là một hướng cải thiện (mục~\ref{muc:huongphattrien}).
+
+\section{Chữ số và hình vẽ nét mảnh}
+Khi người dùng vẽ bằng bút nhỏ trên khung vẽ lớn, nét chỉ bằng vài phần trăm kích thước đối tượng. Sau khi thu nhỏ về 20--22 px nét còn dưới một pixel; nếu thu nhỏ bằng nội suy song tuyến tính
+nét bị rách và CNN nhận sai. Hai thí nghiệm đo hiện tượng này với ba cấu hình khâu thu nhỏ và chuẩn hóa: \emph{song tuyến tính}, \emph{trung bình theo diện tích} và \emph{diện tích kèm kéo giãn độ sáng}
+(cấu hình mặc định). Cả hai dùng ảnh \textbf{do chương trình tạo}, vì vậy chỉ cho biết mức rủi ro.
+
+\subsection{Chữ số}
+150 ảnh test MNIST được phóng to, làm mỏng nét về bộ xương một pixel bằng thuật toán Zhang--Suen \cite{zhang1984} rồi giãn trở lại đến độ dày mong muốn, đặt ngẫu nhiên vào khung 300--480 px.
+
+\begin{table}[H]\centering
+\begin{tabular}{lrrr}
+\toprule
+Độ dày nét / chiều cao chữ số & Song tuyến tính & Diện tích & Diện tích + kéo giãn \\
+\midrule
+12\% & 99,3\% & 99,3\% & 99,3\% \\
+8\% & 98,7\% & 98,7\% & 98,7\% \\
+5\% & 98,0\% & 98,7\% & 98,7\% \\
+3\% & 90,7\% & 98,0\% & 98,0\% \\
+1,5\% & 52,7\% & 82,0\% & 95,3\% \\
+\bottomrule
+\end{tabular}
+\caption{Độ chính xác chữ số theo độ dày nét (150 ảnh mỗi dòng; ảnh tổng hợp từ MNIST).}
+\end{table}
+\hinh{net_manh_chu_so.png}{0.7}{Chữ số nét mảnh: ba cấu hình thu nhỏ/chuẩn hóa.}
+
+Với nét dày (từ 8\% trở lên) ba cấu hình như nhau, nên cách mới không làm kém đi trường hợp bình thường. Khi nét chỉ còn 3\% chiều cao, song tuyến tính giảm xuống $90{,}7\%$; ở $1{,}5\%$ chỉ còn $52{,}7\%$.
+Trung bình diện tích giữ được nét nhưng làm nó mờ, nên cần thêm bước kéo giãn độ sáng ($82{,}0\%\to95{,}3\%$ ở $1{,}5\%$).
+
+\subsection{Hình học}
+Sáu họ hình (tròn, tam giác đều, vuông, bất kỳ, chữ nhật tỉ lệ vừa và dài) được vẽ bằng Pillow kiểu Paint, có rung tay, kích thước ảnh 300--500 px và bốn độ dày nét
+(1,2\%, 2,5\%, 5\%, 9\% kích thước hình), 40 ảnh mỗi ô. Mã vẽ độc lập với bộ sinh dữ liệu huấn luyện nhưng \textbf{cùng các họ hình} mà mô hình đã được dạy.
+
+\begin{table}[H]\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{Nét mảnh nhất (1,2\%)} & \multicolumn{3}{c}{Trung bình 4 độ dày} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Họ hình & S.t.t. & Diện tích & + kéo giãn & S.t.t. & Diện tích & + kéo giãn \\
+\midrule
+Tròn & 5\% & 100\% & 100\% & 66,9\% & 100,0\% & 100,0\% \\
+Tam giác đều & 85\% & 100\% & 100\% & 95,6\% & 100,0\% & 100,0\% \\
+Tam giác vuông & 85\% & 100\% & 100\% & 88,8\% & 100,0\% & 99,4\% \\
+Tam giác bất kỳ & 85\% & 100\% & 100\% & 95,0\% & 99,4\% & 99,4\% \\
+Chữ nhật (tỉ lệ 0,55--1) & 90\% & 60\% & 100\% & 97,5\% & 90,0\% & 100,0\% \\
+Chữ nhật dài (0,25--0,45) & 38\% & 5\% & 98\% & 80,0\% & 75,6\% & 98,8\% \\
+\midrule
+Trung bình toàn bộ & \multicolumn{3}{c}{} & 87,3\% & 94,2\% & 99,6\% \\
+\bottomrule
+\end{tabular}
+\caption{Hình vẽ Pillow có rung tay (S.t.t.: nội suy song tuyến tính). Mỗi ô $40$ ảnh; ảnh tổng hợp, không phải hình người vẽ thật.}
+\end{table}
+\hinh{ve_pil_hinh_hoc.png}{0.85}{Hình vẽ Pillow có rung tay: độ chính xác trung bình theo họ hình.}
+
+Hình tròn nét mảnh nhất bị nhận sai gần như hoàn toàn ($5\%$) với song tuyến tính vì vòng tròn bị rách thành các chấm. Trung bình diện tích khắc phục điều này nhưng, nếu không kéo giãn độ sáng,
+làm hỏng chữ nhật nét mảnh ($60\%$ và $5\%$) vì nét sau khi lấy trung bình quá mờ so với ảnh huấn luyện. Chỉ khi kết hợp cả hai bước mới đạt $99{,}6\%$ trung bình.
+Hai bước này vì vậy được dùng làm mặc định.
+
+\section{Thu ảnh thật và quy trình đánh giá}
+\label{muc:thuanh}
+Ứng dụng có sẵn trang thu ảnh (\texttt{python3 ung\_dung.py -{}-thu-anh}): người thu chọn \textbf{nhãn thật trước}, vẽ trên khung hoặc tải ảnh, đặt mã người viết tự đặt. Trang \emph{không hiển thị dự đoán}
+để tránh sửa ảnh hay nhãn theo mô hình. Mỗi ảnh được lưu kèm tệp mô tả (nhãn, nguồn, thời điểm, SHA-256); ảnh trống hoặc không tách được đối tượng bị từ chối lúc thu. Lệnh
+\texttt{python3 danh\_gia.py -{}-bai-toan ca\_hai} đánh giá trên các ảnh này bằng \emph{đúng đường xử lý của ứng dụng}, bỏ qua ảnh trùng byte, tính ảnh không xử lý được là sai và đếm riêng.
+Yêu cầu tối thiểu để kết quả được coi là đủ: chữ số 50 ảnh (ít nhất 5 mỗi chữ số), hình học 30 ảnh (ít nhất 10 mỗi hình), nên có nhiều người viết/vẽ. Các ảnh này chỉ dùng để \emph{đánh giá},
+không dùng để huấn luyện hay chỉnh mô hình đã chốt.
+
+\subsection{Kết quả trên ảnh thật (một người viết)}
+Đã thu 58 ảnh chữ số và 43 ảnh hình của \textbf{một người}: viết/vẽ bằng bút mực trên giấy, chụp ảnh các tờ giấy, rồi cắt từng ký hiệu thành một ảnh riêng
+(chừa lề quanh nét); có ba tờ giấy. Ảnh chụp có nét chữ mặt sau tờ giấy lộ mờ qua giấy và ánh sáng không đều. Nhãn được ghi theo thứ tự đọc \emph{trước} khi chạy dự đoán; sau đó người viết đã rà soát lại toàn bộ nhãn.
+Bộ này \textbf{đã đạt ngưỡng số lượng tối thiểu} ở trên (trạng thái \texttt{ready}, chỉ xét số lượng): chữ số 58 ảnh, mỗi chữ số ít nhất 5 ảnh; hình 43 ảnh (16 tròn, 17 tam giác, 10 chữ nhật/vuông).
+\emph{Nhưng chỉ có một người viết}, nên kết quả không đại diện cho chữ viết tay nói chung.
+
+\begin{table}[H]\centering
+\begin{tabular}{lrrl}
+\toprule
+Bài toán & Cơ sở & Cải tiến (được chọn) & Khoảng Wilson 95\% (cải tiến) \\
+\midrule
+Chữ số ($58$ ảnh) & $49/58$ & $50/58$ ($86{,}2\%$) & $[75{,}1;\,92{,}8]\%$ \\
+Hình học ($43$ ảnh) & $42/43$ & $43/43$ ($100\%$) & $[91{,}8;\,100]\%$ \\
+\bottomrule
+\end{tabular}
+\caption{Ảnh thật của một người viết; khoảng Wilson chỉ mô tả độ bất định do cỡ mẫu, không nói về khác biệt giữa người viết.}
+\end{table}
+
+Với hình học, cả 43 ảnh được nhận đúng, gồm tam giác nhiều hướng (đỉnh lên, đỉnh xuống, nằm ngang), hình tròn lớn và nhỏ, chữ nhật rất dài và 3 hình tô đặc (hệ thống chỉ được huấn luyện trên hình đường viền);
+mô hình cơ sở sai một ảnh (hình vuông tô đặc bị nhận là tam giác). Mẫu chữ nhật/vuông chỉ có 10 ảnh.
+Với chữ số, $50/58$ thấp hơn nhiều so với $99{,}15\%$ trên MNIST. Tám ảnh sai là $2\to1$, $4\to2$, $4\to9$, $7\to2$, $8\to3$ và ba ảnh $9\to3$; chữ số 9 chỉ đúng $3/6$, chữ số 4 đúng $3/5$.
+Theo từng tờ giấy kết quả là $25/30$, $20/23$ và $5/5$ (tờ cuối chỉ có chữ số 3). Quan sát ảnh đầu vào CNN bằng mắt (chưa phân tích định lượng):
+cả ba chữ số 9 sai được viết kiểu chữ ``g'' có đuôi móc; chữ số 8 viết hẹp; một chữ số 4 viết đầu kín trông như số 9; một chữ số 7 có gạch ngang giữa bị nhận là 2 với độ tin cậy softmax thấp; ở một chữ số 4 khác,
+nét sổ đứng không dính vào nét chéo nên bị bước giữ thành phần liên thông lớn nhất bỏ mất.
+Tắt bước đó trên 30 ảnh của tờ thứ nhất làm số 4 đúng nhưng sai thêm hai ảnh khác ($24/30$), nên đây không phải lỗi sửa được bằng một tùy chọn.
+Kết quả cho thấy khoảng cách giữa MNIST và chữ viết tay thật đáng được khảo sát tiếp (kiểu viết, cách căn chữ, ảnh chụp), chưa cho phép kết luận về nguyên nhân.
+Các ảnh này chỉ dùng để đánh giá, không dùng để huấn luyện hay chỉnh mô hình.
+
+\section{Hạn chế}
+Ngưỡng Otsu toàn cục kém khi nền loang sáng nặng; chọn chữ số hay hình học là thao tác tay và hai mạng không từ chối ảnh sai loại; các thí nghiệm ở chương này dùng ảnh tổng hợp, một hạt và số ảnh vừa phải
+(150 ảnh chữ số, 40 ảnh mỗi ô hình học), nên các chênh lệch vài điểm phần trăm không nên được diễn giải quá mức.

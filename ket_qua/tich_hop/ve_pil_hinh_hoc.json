@@ -1,0 +1,149 @@
+{
+  "mo_ta": "Hình vẽ bằng Pillow có rung tay; ảnh tổng hợp, không phải hình người vẽ thật",
+  "so_anh_moi_o": 40,
+  "hat": 424242,
+  "cau_hinh": [
+    "cu_song_tuyen_tinh",
+    "dien_tich",
+    "dien_tich_keo_gian"
+  ],
+  "do_chinh_xac": {
+    "tron": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.05,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 0.625,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      }
+    },
+    "tam_giac_deu": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.85,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 0.975,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      }
+    },
+    "tam_giac_vuong": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.85,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 0.775,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 0.975
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 0.925,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      }
+    },
+    "tam_giac_bat_ky": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.85,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 0.95,
+        "dien_tich": 0.975,
+        "dien_tich_keo_gian": 0.975
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      }
+    },
+    "chu_nhat_vua": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.9,
+        "dien_tich": 0.6,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      }
+    },
+    "chu_nhat_dai": {
+      "0.012": {
+        "cu_song_tuyen_tinh": 0.375,
+        "dien_tich": 0.05,
+        "dien_tich_keo_gian": 0.975
+      },
+      "0.025": {
+        "cu_song_tuyen_tinh": 0.85,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.05": {
+        "cu_song_tuyen_tinh": 0.975,
+        "dien_tich": 1.0,
+        "dien_tich_keo_gian": 1.0
+      },
+      "0.09": {
+        "cu_song_tuyen_tinh": 1.0,
+        "dien_tich": 0.975,
+        "dien_tich_keo_gian": 0.975
+      }
+    }
+  },
+  "trung_binh": {
+    "cu_song_tuyen_tinh": 0.8729166666666667,
+    "dien_tich": 0.9416666666666668,
+    "dien_tich_keo_gian": 0.9958333333333332
+  }
+}

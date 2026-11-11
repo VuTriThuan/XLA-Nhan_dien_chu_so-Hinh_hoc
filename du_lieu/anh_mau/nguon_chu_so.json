@@ -1,0 +1,62 @@
+[
+  {
+    "tep": "chu_so_0.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 3,
+    "chu_so": 0
+  },
+  {
+    "tep": "chu_so_1.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 2,
+    "chu_so": 1
+  },
+  {
+    "tep": "chu_so_2.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 1,
+    "chu_so": 2
+  },
+  {
+    "tep": "chu_so_3.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 18,
+    "chu_so": 3
+  },
+  {
+    "tep": "chu_so_4.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 4,
+    "chu_so": 4
+  },
+  {
+    "tep": "chu_so_5.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 8,
+    "chu_so": 5
+  },
+  {
+    "tep": "chu_so_6.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 11,
+    "chu_so": 6
+  },
+  {
+    "tep": "chu_so_7.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 0,
+    "chu_so": 7
+  },
+  {
+    "tep": "chu_so_8.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 61,
+    "chu_so": 8
+  },
+  {
+    "tep": "chu_so_9.png",
+    "nguon": "MNIST test chính thức (không phải ảnh ngoài)",
+    "chi_so_test": 7,
+    "chu_so": 9
+  }
+]

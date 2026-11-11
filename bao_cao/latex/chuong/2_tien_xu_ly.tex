@@ -1,0 +1,88 @@
+\chapter{Tiền xử lý ảnh}
+\label{chuong:tienxuly}
+
+\section{Mục tiêu và giả định}
+Tiền xử lý đưa một ảnh bất kỳ chứa một đối tượng chính về dạng đầu vào thống nhất cho CNN: ảnh xám $28\times28$, giá trị thực trong $[0,1]$,
+\textbf{nền bằng 0, nét sáng}, đối tượng được căn giữa và có kích thước cố định. Cách làm này loại bỏ các khác biệt không liên quan đến nhãn (màu sắc, độ sáng nền,
+vị trí, kích thước, ảnh âm bản) để mạng chỉ cần học hình dạng. Giả định: một đối tượng, nền tương đối đồng đều, đối tượng không chiếm phần lớn viền ảnh.
+
+\section{Các bước}
+
+\subsection{Chuyển ảnh xám}
+Ảnh màu RGB được chuyển theo độ chói $Y = 0{,}299R + 0{,}587G + 0{,}114B$. Ảnh có kênh alpha được ghép lên nền trắng trước khi chuyển xám:
+$C' = \alpha C + (1-\alpha)\cdot 255$. Ảnh float được nhận diện thang đo $[0,1]$ hoặc $[0,255]$ từ giá trị lớn nhất.
+
+\subsection{Giới hạn kích thước}
+Thành phần liên thông được cài bằng duyệt BFS thuần Python nên rất chậm trên ảnh nhiều megapixel. Do đó ảnh có cạnh dài trên 512 px được thu nhỏ trước
+bằng trung bình theo diện tích (mục~\ref{muc:dientich}); ảnh nhỏ hơn được giữ nguyên.
+
+\subsection{Lọc trung vị (tùy chọn)}
+Mỗi pixel được thay bằng trung vị của cửa sổ $k\times k$ ($k$ lẻ), biên được xử lý bằng cách lặp pixel ngoài cùng. Bộ lọc khử nhiễu muối tiêu rất tốt nhưng
+\emph{xóa nét một pixel}, vì vậy \textbf{không bật mặc định}.
+
+\subsection{Phân ngưỡng Otsu}
+Với histogram 256 mức, ngưỡng $t$ được chọn để cực đại phương sai giữa hai lớp nền/nét \cite{otsu1979}:
+\begin{equation}
+t^{*}=\arg\max_{t}\ \omega_0(t)\,\omega_1(t)\,\bigl(\mu_0(t)-\mu_1(t)\bigr)^2 ,
+\end{equation}
+trong đó $\omega_i$ là tỉ lệ pixel và $\mu_i$ là mức xám trung bình của mỗi lớp. Otsu là ngưỡng toàn cục nên kém khi ánh sáng loang không đều.
+
+\subsection{Cực tính}
+Nét tối trên nền sáng và nét sáng trên nền tối được đưa về cùng một dạng. Chế độ tự động ước lượng nền từ trung vị mức xám của các pixel trên viền ảnh;
+nếu tỉ lệ viền tối nằm trong $[0{,}35;\,0{,}65]$ chương trình cảnh báo vì quy tắc này có thể sai (ví dụ đối tượng chiếm viền). Người dùng có thể chỉ định cực tính.
+
+\subsection{Hình thái học (tùy chọn)}
+Co, giãn, mở, đóng với phần tử cấu trúc vuông $3\times3$. Co yêu cầu mọi vị trí của phần tử cấu trúc nằm trong đối tượng, giãn chỉ cần một vị trí chạm;
+mở là co rồi giãn, đóng là giãn rồi co. Với mở/đóng, mặt nạ được đệm nền $r=\lfloor k/2\rfloor$ pixel trước khi ghép hai phép và chỉ cắt về kích thước gốc sau cả hai bước,
+nhờ đó đối tượng chạm biên không bị co mất. Đây là một quy ước biên; quy ước ``cắt sau từng bước'' khác trong dải biên rộng $r$ và chúng được đối chiếu trong kiểm thử.
+Hình thái học không bật mặc định vì có thể xóa nét hoặc làm dính nét.
+
+\subsection{Thành phần liên thông lớn nhất}
+Duyệt BFS theo 8 láng giềng để nét chéo vẫn là một thành phần, giữ thành phần nhiều pixel nhất và bỏ các chấm nhiễu rời. Hạn chế: nét bị đứt thành nhiều đoạn
+chỉ còn đoạn lớn nhất (có tùy chọn tắt).
+
+\subsection{Hộp bao, thu nhỏ và căn giữa}
+Hộp bao nhỏ nhất của đối tượng được cắt ra và thu phóng với \emph{cùng một hệ số} cho hai chiều, $s = L/\max(H,W)$, để không làm méo tỉ lệ; $L$ là cạnh dài cho phép
+($L=20$ cho chữ số, $L=22$ cho hình học trong canvas $28\times28$). Kết quả được đặt vào giữa canvas nền đen.
+
+\subsection{Thu nhỏ theo diện tích}
+\label{muc:dientich}
+Khi \emph{phóng to} dùng nội suy song tuyến tính (giá trị tại tâm pixel đích được nội suy từ bốn pixel nguồn lân cận). Khi \emph{thu nhỏ mạnh} (ví dụ ảnh 400 px về 22 px) nội suy song tuyến tính chỉ
+lấy mẫu vài điểm nên bỏ sót nét mảnh: nét biến thành các chấm rời và CNN nhận sai (xem Chương~\ref{chuong:tichhop}). Hệ thống vì vậy thu nhỏ bằng \textbf{trung bình theo diện tích}, tức lọc thông thấp
+trước khi lấy mẫu: mỗi pixel đích là trung bình có trọng số của vùng nguồn mà nó phủ,
+\begin{equation}
+I'_{ij}=\sum_{u,v} W^{y}_{iu}\,I_{uv}\,W^{x}_{jv},\qquad W_{iu}=\frac{\operatorname{overlap}\bigl([i\,s,(i{+}1)s),[u,u{+}1)\bigr)}{s},
+\end{equation}
+với $s=n_{\text{vào}}/n_{\text{ra}}$ là bước thu nhỏ theo mỗi trục. Phép này bảo toàn giá trị trung bình và cho phép tỉ lệ không nguyên.
+
+\subsection{Kéo giãn độ sáng}
+Sau khi lấy trung bình, nét mảnh bị mờ (cường độ thấp), trong khi ảnh huấn luyện luôn có nét sáng nhất xấp xỉ 1. Ảnh được chia cho giá trị lớn nhất để nét sáng nhất bằng 1.
+
+\section{Quy ước đầu vào của CNN}
+\begin{table}[H]\centering
+\begin{tabular}{lll}
+\toprule
+ & Chữ số & Hình học \\
+\midrule
+Kích thước, kiểu dữ liệu & $28\times28$, \texttt{float32} & giống nhau \\
+Khoảng giá trị & $[0,1]$, nền 0, nét sáng & giống nhau \\
+Cạnh dài tối đa của đối tượng & 20 px (lề 4) & 22 px (lề 3) \\
+Căn giữa & theo tâm hộp bao & theo tâm hộp bao \\
+\bottomrule
+\end{tabular}
+\caption{Quy ước đầu vào. Không trừ mean/chia std; không chia 255 lần thứ hai.}
+\end{table}
+
+\section{Kiểm thử}
+Các hàm được đối chiếu với tham chiếu độc lập viết bằng vòng lặp hoặc đáp án dựng tay: chuyển xám (ba màu cơ bản cho 76/150/29; alpha 0/255/128 cho nền trắng/đen/xám 127),
+lọc trung vị với duyệt láng giềng có sắp xếp (cửa sổ 1, 3, 5), Otsu với tính trực tiếp trung bình hai lớp cho cả 256 ngưỡng, bốn phép hình thái với vòng lặp Boolean (SE 1, 3, 5),
+thành phần liên thông (đường chéo, hòa điểm, ảnh rỗng) và nội suy tại từng tọa độ. Ngoài ra có kiểm thử cho ảnh đảo màu, nền trong suốt, ảnh float, ảnh rất nhỏ, tham số sai
+và ảnh không hợp lệ. Ở chế độ tương thích (song tuyến tính, không kéo giãn) đầu ra khớp từng pixel với đầu ra đã lưu của bản cài đặt đầu tiên (ví dụ chữ số có nhiễu, có trong bộ kiểm thử); khi gộp mã vào một package, chế độ này cũng được đối chiếu một lần với bản cũ trên 360 ca ngẫu nhiên, không có ca nào khác (phép đo một lần này không nằm trong bộ kiểm thử).
+
+Đợt rà soát đầu tiên đã phát hiện và sửa ba lỗi: (1) mức xám của nét lấy từ ảnh gốc thay vì ảnh đã lọc nên nhiễu quay lại đầu ra; (2) vùng thêm vào nhờ phép đóng
+không xuất hiện ở đầu ra; (3) phép đóng cắt phần giãn ngoài biên trước khi co nên làm mất vật chạm biên. Cả ba đều có kiểm thử hồi quy; ảnh trước/sau nằm trong
+\texttt{ket\_qua/ra\_soat\_tien\_xu\_ly/}.
+
+\section{Hạn chế}
+Ngưỡng Otsu toàn cục kém trên nền loang sáng, bóng đổ mạnh hoặc nền hoa văn; tiền xử lý chỉ xử lý một đối tượng; cực tính tự động có thể sai khi đối tượng chiếm nhiều viền;
+căn giữa theo hộp bao khác căn theo trọng tâm của MNIST (xem mục~\ref{muc:duongtienxuly}); chưa có tiêu chí tự động khẳng định ảnh đủ tốt cho CNN.

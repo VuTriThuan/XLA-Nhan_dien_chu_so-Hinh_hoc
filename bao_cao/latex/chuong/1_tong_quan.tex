@@ -1,0 +1,48 @@
+\chapter{Tổng quan}
+
+\section{Đề tài và mục tiêu}
+Đề tài xây dựng một hệ thống nhận dạng ảnh chứa \textbf{một chữ số viết tay} (0--9) hoặc \textbf{một hình học đơn giản}
+(hình tròn, tam giác, hình chữ nhật hay vuông) bằng mạng neural tích chập (CNN). Mục tiêu gồm:
+\begin{itemize}
+\item cài đặt phần tiền xử lý ảnh bằng các thuật toán xử lý ảnh cơ bản của môn học (chuyển xám, lọc trung vị, phân ngưỡng Otsu,
+hình thái học, thành phần liên thông, nội suy), đưa ảnh bất kỳ về đầu vào thống nhất cho mạng;
+\item huấn luyện hai CNN nhỏ: một mạng cho chữ số (dữ liệu MNIST), một mạng cho hình học (dữ liệu tự sinh);
+\item đóng gói thành ứng dụng web cho phép vẽ hoặc tải ảnh, xem kết quả cùng từng bước tiền xử lý;
+\item đánh giá trung thực, nói rõ phần nào đã đo, phần nào chưa đo được.
+\end{itemize}
+
+\section{Phạm vi và giả định}
+Mỗi ảnh chứa một đối tượng chính trên nền tương đối đồng đều. Người dùng chọn bài toán (chữ số hay hình học) trước khi nhận dạng; hai mạng
+\emph{không} có lớp ``không phải'' nên ảnh sai loại vẫn bị gán một lớp. Toàn bộ thuật toán xử lý ảnh được tự cài bằng NumPy; thư viện Pillow chỉ
+dùng để giải mã và ghi tệp ảnh, PyTorch dùng cho mạng neural.
+
+\section{Kiến trúc hệ thống}
+Ảnh đi qua một chuỗi tiền xử lý duy nhất, sau đó vào CNN tương ứng (Hình~\ref{hinh:luong}).
+
+\begin{figure}[H]\centering
+\begin{tabular}{c}
+\fbox{\parbox{0.88\textwidth}{\centering Ảnh (vẽ trên khung / tải lên / tệp)}}\\[2pt]
+$\downarrow$\\[2pt]
+\fbox{\parbox{0.88\textwidth}{\centering Tiền xử lý: giới hạn kích thước $\rightarrow$ xám $\rightarrow$ (lọc trung vị) $\rightarrow$ Otsu $\rightarrow$ cực tính $\rightarrow$ thành phần liên thông lớn nhất\\ $\rightarrow$ hộp bao $\rightarrow$ thu nhỏ giữ tỉ lệ $\rightarrow$ căn giữa $28\times 28$ $\rightarrow$ kéo giãn độ sáng}}\\[2pt]
+$\downarrow$\\[2pt]
+\fbox{\parbox{0.42\textwidth}{\centering CNN chữ số (10 lớp)}}\ \ \fbox{\parbox{0.42\textwidth}{\centering CNN hình học (3 lớp)}}\\[2pt]
+$\downarrow$\\[2pt]
+\fbox{\parbox{0.88\textwidth}{\centering Lớp dự đoán và điểm softmax của mọi lớp}}
+\end{tabular}
+\caption{Luồng nhận dạng. Hai nhánh dùng chung tiền xử lý và chỉ khác lề căn đối tượng (20 px cho chữ số, 22 px cho hình).}
+\label{hinh:luong}
+\end{figure}
+
+Mã nguồn chia theo chức năng thành các thư mục phẳng: \texttt{tien\_xu\_ly} (xử lý ảnh), \texttt{loi} (mạng, huấn luyện, đánh giá, dự đoán),
+\texttt{bo\_du\_lieu} (dữ liệu) và \texttt{giao\_dien} (ứng dụng web); mỗi việc có một tệp chạy riêng ở thư mục gốc
+(\texttt{huan\_luyen.py}, \texttt{nhan\_dang.py}, \texttt{danh\_gia.py}, \texttt{ung\_dung.py}). Chi tiết thiết kế xem tài liệu \texttt{bao\_cao/thiet\_ke.md}.
+
+\section{Những điều báo cáo này \emph{không} khẳng định}
+Các số liệu chính của hai CNN lấy từ MNIST (chữ viết tay có sẵn, đã chuẩn hóa) và từ dữ liệu hình học do chương trình sinh. Các thí nghiệm ở Chương~\ref{chuong:tichhop}
+dùng ảnh do chương trình tạo để đo rủi ro, không phải độ chính xác trên ảnh thật.
+Ảnh viết/vẽ tay thật của nhóm \textbf{chỉ có từ một người viết}: 58 ảnh chữ số và 43 ảnh hình, đã đủ số lượng tối thiểu đặt ra nhưng chưa có người viết khác, nên kết quả trên chúng
+(Chương~\ref{chuong:tichhop}, mục~\ref{muc:thuanh}) chỉ là sơ bộ và không thể suy ra độ chính xác trên chữ viết tay nói chung.
+
+\section{Bố cục}
+Chương 2 trình bày tiền xử lý ảnh; Chương 3 và 4 trình bày hai CNN và kết quả; Chương 5 trình bày ứng dụng và đánh giá cả hệ thống;
+Chương 6 kết luận và nêu hướng phát triển.

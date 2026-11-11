@@ -1,0 +1,329 @@
+{
+  "trang_thai": "ready",
+  "thu_muc": "/Users/trithuan/Desktop/Xử lý ảnh/BTL/du_lieu/hinh_hoc/ve_tay",
+  "so_anh": 43,
+  "so_luong_moi_lop": {
+    "tron": 16,
+    "tam_giac": 17,
+    "chu_nhat": 10
+  },
+  "yeu_cau": "ít nhất 30 ảnh khác nhau, ít nhất 10 ảnh mỗi lớp",
+  "so_anh_trung_bi_bo_qua": 0,
+  "nguon_goc": "tệp do người dùng cung cấp; nguồn gốc 'người thật' do người thu khai báo, không suy ra bằng mô hình",
+  "luu_y": "chỉ dùng để đánh giá sau khi chốt mô hình; không dùng để huấn luyện hay chỉnh mô hình",
+  "chi_so": {
+    "so_anh": 43,
+    "so_dung": 42,
+    "so_sai": 1,
+    "so_khong_hop_le": 0,
+    "do_chinh_xac": 0.9767441860465116,
+    "khoang_wilson_95": [
+      0.8794100655939282,
+      0.9958829127256662
+    ],
+    "precision_macro": 0.9814814814814815,
+    "recall_macro": 0.9666666666666667,
+    "f1_macro": 0.9729323308270678,
+    "ma_tran_nham_lan": [
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        1,
+        9
+      ]
+    ],
+    "theo_lop": [
+      {
+        "lop": "tron",
+        "so_mau": 16,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "lop": "tam_giac",
+        "so_mau": 17,
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714
+      },
+      {
+        "lop": "chu_nhat",
+        "so_mau": 10,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526316
+      }
+    ]
+  },
+  "anh_loi_dau_vao": [],
+  "mau": [
+    {
+      "tep": "trang01_31.png",
+      "sha256": "17585ceebfb19ba33e7df5564516a297ac90eeed0dfd602bbf3f430525dc9541",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang01_35.png",
+      "sha256": "e5827cab17ff9605a41d468c7e1b453a23cf20b44c33c67f9f46f04ac97b18f1",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang01_39.png",
+      "sha256": "e3dace555b316adb776be35a29e4145d44dcb39b4f65f0105de285b7215e3c6b",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang01_42.png",
+      "sha256": "cc0de265d228fb4b25f2731a63cb46ce4a229fa3515323fe00a1a38bab838b23",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang01_48.png",
+      "sha256": "b5109df6efee46a718236f7682ade1b6b9a58be04bcc64cf2cfa1460ad76e2be",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_06.png",
+      "sha256": "def6b5f54768e5543f8cb1a00482d31e7343edce703258e6558123c853b449cb",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_07.png",
+      "sha256": "0733af62645d48379a127b6aa7cb48e1399ff4a2e5db9b35a13827c9d5b19593",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_08.png",
+      "sha256": "934923057a9c11e9b7143c0211b0433430461b9a6ccd96ef184fcfaed978aece",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_09.png",
+      "sha256": "15c962431c4e066661426d42419cc8a54e2973cfa6fac79b3bd0c98334b64598",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_10.png",
+      "sha256": "3c6475bee8da4ab3b6b6f860faf7ff709afe7d00522b84187ec7d37c4a5fd5b5",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_11.png",
+      "sha256": "f81394f77d3e8ac801f418fbbcd4f5bee86192209e6f29606a9017d06c95de41",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_12.png",
+      "sha256": "2a913d6b44b2ad76028a9f06d335ecdc7bd8072eab170b48afea5175502b51db",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_13.png",
+      "sha256": "fed1a737731936b40b9cca1a3597280d79e9da535ac067f5484afb2687517346",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_14.png",
+      "sha256": "7187a0a79172e428d4ae222bc82ad18d42955f76628dc450ee3f56f99299127b",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_15.png",
+      "sha256": "580c26dac94cc36a7ba4b2fb8033afa1599643ad1b2bb7876f5c9df3782d0012",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang03_16.png",
+      "sha256": "22a6a9b5610c1daf588d761a02a0a80f4505d279b36e5f452a5b41f33aac64ba",
+      "nhan": "tron",
+      "du_doan": "tron"
+    },
+    {
+      "tep": "trang01_33.png",
+      "sha256": "6638aa4417b6d06e55205018f03e7fbd8e8c4120e2886b85c7701d6ee37259f6",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_36.png",
+      "sha256": "a00e926945adb6200d4b51fce0842a26b6aa56b795ff1b406aacb353139c4d95",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_44.png",
+      "sha256": "43d22b1919ec958388d961f1f4dafecdf90ae58e837a001e77f0402478db9be0",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_46.png",
+      "sha256": "87bf3084e91cc632a4f902bb6f8d0bef93f66f011afa52fae634385913d9f70c",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_50.png",
+      "sha256": "23c6d5319a6cdfbcc0ea3f4330550d43e8cef0193ea201c954839bec0d5e448f",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_17.png",
+      "sha256": "d13861f955cef22dfceade6198e6250201de566b5735d16a2dcdf828a585c527",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_18.png",
+      "sha256": "5fcd8e634543cd5756cced04f93554a5696ddcca2c329699f1583eeb853433a0",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_19.png",
+      "sha256": "187ffda914886ba0de4d0886b666c422cad3bd45d20aaccbbc4930326f8f2730",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_20.png",
+      "sha256": "31cf379aeb869bbb881d7f6b08dd3e0a3cab55907a4dea7e18fbfa4dcbfe440e",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_21.png",
+      "sha256": "6c5665035674ce4bf31fad1efc6e8dd45927641a096ce32a05f9db2969a0cdde",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_22.png",
+      "sha256": "8c4c805d8b384c62a03a5e883d58dce47a63338e0d4217c9a249a2e60b1b8e27",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_23.png",
+      "sha256": "c4d69fd8ed91821ab8511d956cfa78a74a27e6d42ce2162f7eaeefd0b6821e8b",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_24.png",
+      "sha256": "5a3e63495e9e5e6142063cded299a84fe64b609d9efb159d3998d90b62e9c06a",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_25.png",
+      "sha256": "0d8c93af2e3a19496e5f07badef94945f6428086eff41c4d1237259c3a151a2e",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_26.png",
+      "sha256": "2200f85871a047e4f18b80fbc7697856546f3f3fce1fe247dd9ceeec9b03e25e",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_27.png",
+      "sha256": "34aa3222d9eb03c697685ec6b68ce4796bd902753dacf65dd5cb4213a26a2149",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang03_28.png",
+      "sha256": "dda0eb9b16869afd6e88bd3a71995ce96ab106ca2d5ba134d5ef45f7896d2e16",
+      "nhan": "tam_giac",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_32.png",
+      "sha256": "c007a9117d45767ecb3775d6db1d005055197fa5de3444d67c657ad8381185ab",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_34.png",
+      "sha256": "4a73309768fb9204ed0253666aa9467ab5df475c767ce3115ac14ce6e4297417",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_37.png",
+      "sha256": "4f1a25d96bfa2055dfc6713edadf5a092e95edabe1fe461514892b4fbfb3f9cb",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_38.png",
+      "sha256": "e9d075e2f5e82a387137c80d955000291e9930da1016c73fd8f53e9a50d20454",
+      "nhan": "chu_nhat",
+      "du_doan": "tam_giac"
+    },
+    {
+      "tep": "trang01_40.png",
+      "sha256": "f4ac29da5cac9a7c9f75ad2f3ce990b477acb8492a8374b7551ddfce376d6a4f",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_41.png",
+      "sha256": "002d5cce84df46a280f6b8609ffea5eb59351e764813ad34e6c37d868e67d9cd",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_43.png",
+      "sha256": "230d769789cf71235eb9950f62bd4fcd80b3d2ab6ec104a73ce4d82b9de5610d",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_45.png",
+      "sha256": "b1797c1d1c2879d97b50004d01dbbbdd45ea7b678e2b951430ac243323cf4731",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_47.png",
+      "sha256": "e96ff8cf78599596f473793276a4510c4bf1b5cf65c8d397a5c5eda569bf093b",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    },
+    {
+      "tep": "trang01_49.png",
+      "sha256": "61684d164cd298d827198749822707cd62fdbe244c86027cd2518eddd536238a",
+      "nhan": "chu_nhat",
+      "du_doan": "chu_nhat"
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "tong_so_loi": 84,
+  "cac_loi": [
+    {
+      "chi_so": 9729,
+      "lop_that": "5",
+      "lop_du_doan": "6",
+      "do_tin_cay": 0.9949570298194885,
+      "diem_lop_that": 0.0009403049480170012
+    },
+    {
+      "chi_so": 947,
+      "lop_that": "8",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.9949459433555603,
+      "diem_lop_that": 0.004788653459399939
+    },
+    {
+      "chi_so": 2896,
+      "lop_that": "8",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.9938910007476807,
+      "diem_lop_that": 0.005993878003209829
+    },
+    {
+      "chi_so": 2597,
+      "lop_that": "5",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.9936376214027405,
+      "diem_lop_that": 0.006113097071647644
+    },
+    {
+      "chi_so": 2654,
+      "lop_that": "6",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.9919682145118713,
+      "diem_lop_that": 0.0034162329975515604
+    },
+    {
+      "chi_so": 4176,
+      "lop_that": "2",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.991224467754364,
+      "diem_lop_that": 0.007690883707255125
+    },
+    {
+      "chi_so": 3520,
+      "lop_that": "6",
+      "lop_du_doan": "4",
+      "do_tin_cay": 0.9821406602859497,
+      "diem_lop_that": 0.005635268520563841
+    },
+    {
+      "chi_so": 1530,
+      "lop_that": "8",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.97945636510849,
+      "diem_lop_that": 0.019326813519001007
+    },
+    {
+      "chi_so": 2130,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.9794085621833801,
+      "diem_lop_that": 0.02050970308482647
+    },
+    {
+      "chi_so": 9009,
+      "lop_that": "7",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.9737780690193176,
+      "diem_lop_that": 0.02553972601890564
+    },
+    {
+      "chi_so": 6597,
+      "lop_that": "0",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.9608713984489441,
+      "diem_lop_that": 0.005731931887567043
+    },
+    {
+      "chi_so": 2118,
+      "lop_that": "6",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.9595344662666321,
+      "diem_lop_that": 0.040074050426483154
+    },
+    {
+      "chi_so": 1901,
+      "lop_that": "9",
+      "lop_du_doan": "4",
+      "do_tin_cay": 0.9567406177520752,
+      "diem_lop_that": 0.006721323821693659
+    },
+    {
+      "chi_so": 2387,
+      "lop_that": "9",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.9486467242240906,
+      "diem_lop_that": 0.03851526975631714
+    },
+    {
+      "chi_so": 2135,
+      "lop_that": "6",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.9300667643547058,
+      "diem_lop_that": 0.05141105502843857
+    },
+    {
+      "chi_so": 5937,
+      "lop_that": "5",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.9269737601280212,
+      "diem_lop_that": 0.07021520286798477
+    },
+    {
+      "chi_so": 9642,
+      "lop_that": "9",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.9136703014373779,
+      "diem_lop_that": 0.06377367675304413
+    },
+    {
+      "chi_so": 3422,
+      "lop_that": "6",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.9124001860618591,
+      "diem_lop_that": 0.08752736449241638
+    },
+    {
+      "chi_so": 9770,
+      "lop_that": "5",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.9095231890678406,
+      "diem_lop_that": 0.08972854167222977
+    },
+    {
+      "chi_so": 9692,
+      "lop_that": "9",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.8846679329872131,
+      "diem_lop_that": 0.10540129989385605
+    },
+    {
+      "chi_so": 2109,
+      "lop_that": "3",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.8819916248321533,
+      "diem_lop_that": 0.06850405037403107
+    },
+    {
+      "chi_so": 4740,
+      "lop_that": "3",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.8804998993873596,
+      "diem_lop_that": 0.09874263405799866
+    },
+    {
+      "chi_so": 1319,
+      "lop_that": "8",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.8776825666427612,
+      "diem_lop_that": 0.029878798872232437
+    },
+    {
+      "chi_so": 3534,
+      "lop_that": "4",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.8626649379730225,
+      "diem_lop_that": 0.13672445714473724
+    },
+    {
+      "chi_so": 2771,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.8614097237586975,
+      "diem_lop_that": 0.13606701791286469
+    },
+    {
+      "chi_so": 1299,
+      "lop_that": "5",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.8604711890220642,
+      "diem_lop_that": 0.1283339262008667
+    },
+    {
+      "chi_so": 740,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.8458933234214783,
+      "diem_lop_that": 0.14890028536319733
+    },
+    {
+      "chi_so": 4639,
+      "lop_that": "8",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.8412204384803772,
+      "diem_lop_that": 0.1584254652261734
+    },
+    {
+      "chi_so": 3727,
+      "lop_that": "8",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.8297176361083984,
+      "diem_lop_that": 0.1685478240251541
+    },
+    {
+      "chi_so": 3762,
+      "lop_that": "6",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.8256295323371887,
+      "diem_lop_that": 0.041700538247823715
+    },
+    {
+      "chi_so": 4497,
+      "lop_that": "8",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.8252981901168823,
+      "diem_lop_that": 0.1305924654006958
+    },
+    {
+      "chi_so": 4860,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.8208402991294861,
+      "diem_lop_that": 0.17626313865184784
+    },
+    {
+      "chi_so": 4807,
+      "lop_that": "8",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.8195564150810242,
+      "diem_lop_that": 0.11643849313259125
+    },
+    {
+      "chi_so": 6625,
+      "lop_that": "8",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.8129781484603882,
+      "diem_lop_that": 0.09421946108341217
+    },
+    {
+      "chi_so": 1226,
+      "lop_that": "7",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.8014766573905945,
+      "diem_lop_that": 0.1825244277715683
+    },
+    {
+      "chi_so": 1878,
+      "lop_that": "8",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.7979446053504944,
+      "diem_lop_that": 0.2001512050628662
+    },
+    {
+      "chi_so": 882,
+      "lop_that": "9",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.7964960336685181,
+      "diem_lop_that": 0.19831761717796326
+    },
+    {
+      "chi_so": 1014,
+      "lop_that": "6",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.7948381900787354,
+      "diem_lop_that": 0.15563860535621643
+    },
+    {
+      "chi_so": 4500,
+      "lop_that": "9",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.7905371785163879,
+      "diem_lop_that": 0.15896327793598175
+    },
+    {
+      "chi_so": 2742,
+      "lop_that": "9",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.7636550664901733,
+      "diem_lop_that": 0.18628710508346558
+    },
+    {
+      "chi_so": 8520,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.7582758069038391,
+      "diem_lop_that": 0.24075329303741455
+    },
+    {
+      "chi_so": 1709,
+      "lop_that": "9",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.7370734214782715,
+      "diem_lop_that": 0.09082978963851929
+    },
+    {
+      "chi_so": 2035,
+      "lop_that": "5",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.7267747521400452,
+      "diem_lop_that": 0.2731081545352936
+    },
+    {
+      "chi_so": 2462,
+      "lop_that": "2",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.7221027612686157,
+      "diem_lop_that": 0.13300375640392303
+    },
+    {
+      "chi_so": 646,
+      "lop_that": "2",
+      "lop_du_doan": "4",
+      "do_tin_cay": 0.7175383567810059,
+      "diem_lop_that": 0.1928129345178604
+    },
+    {
+      "chi_so": 115,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.715315580368042,
+      "diem_lop_that": 0.2841983437538147
+    },
+    {
+      "chi_so": 1621,
+      "lop_that": "0",
+      "lop_du_doan": "6",
+      "do_tin_cay": 0.7141464948654175,
+      "diem_lop_that": 0.28584814071655273
+    },
+    {
+      "chi_so": 924,
+      "lop_that": "2",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.6983107924461365,
+      "diem_lop_that": 0.19454137980937958
+    },
+    {
+      "chi_so": 1112,
+      "lop_that": "4",
+      "lop_du_doan": "6",
+      "do_tin_cay": 0.6950945258140564,
+      "diem_lop_that": 0.30387547612190247
+    },
+    {
+      "chi_so": 1242,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.6868637204170227,
+      "diem_lop_that": 0.309993177652359
+    },
+    {
+      "chi_so": 9664,
+      "lop_that": "2",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.6777130961418152,
+      "diem_lop_that": 0.31739944219589233
+    },
+    {
+      "chi_so": 5997,
+      "lop_that": "5",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.6720758676528931,
+      "diem_lop_that": 0.17851078510284424
+    },
+    {
+      "chi_so": 6505,
+      "lop_that": "9",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.6710300445556641,
+      "diem_lop_that": 0.3277859687805176
+    },
+    {
+      "chi_so": 445,
+      "lop_that": "6",
+      "lop_du_doan": "0",
+      "do_tin_cay": 0.6705692410469055,
+      "diem_lop_that": 0.3294055461883545
+    },
+    {
+      "chi_so": 1182,
+      "lop_that": "6",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.6696176528930664,
+      "diem_lop_that": 0.16402176022529602
+    },
+    {
+      "chi_so": 6755,
+      "lop_that": "8",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.632538914680481,
+      "diem_lop_that": 0.3604373037815094
+    },
+    {
+      "chi_so": 4536,
+      "lop_that": "6",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.6197909712791443,
+      "diem_lop_that": 0.37317752838134766
+    },
+    {
+      "chi_so": 3806,
+      "lop_that": "5",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.6167536377906799,
+      "diem_lop_that": 0.3782069981098175
+    },
+    {
+      "chi_so": 938,
+      "lop_that": "3",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.6090254187583923,
+      "diem_lop_that": 0.3902769088745117
+    },
+    {
+      "chi_so": 6571,
+      "lop_that": "9",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.608047366142273,
+      "diem_lop_that": 0.0708959624171257
+    },
+    {
+      "chi_so": 3289,
+      "lop_that": "8",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.6030563712120056,
+      "diem_lop_that": 0.3911513388156891
+    },
+    {
+      "chi_so": 1941,
+      "lop_that": "7",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.5987942814826965,
+      "diem_lop_that": 0.3970028758049011
+    },
+    {
+      "chi_so": 684,
+      "lop_that": "7",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.5935328006744385,
+      "diem_lop_that": 0.3747284412384033
+    },
+    {
+      "chi_so": 9792,
+      "lop_that": "4",
+      "lop_du_doan": "9",
+      "do_tin_cay": 0.5847169160842896,
+      "diem_lop_that": 0.38815683126449585
+    },
+    {
+      "chi_so": 1681,
+      "lop_that": "3",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.5751302242279053,
+      "diem_lop_that": 0.4239595830440521
+    },
+    {
+      "chi_so": 1260,
+      "lop_that": "7",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.564983606338501,
+      "diem_lop_that": 0.4207576513290405
+    },
+    {
+      "chi_so": 9024,
+      "lop_that": "7",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.5557491183280945,
+      "diem_lop_that": 0.4433607757091522
+    },
+    {
+      "chi_so": 2939,
+      "lop_that": "9",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.5484402179718018,
+      "diem_lop_that": 0.21015097200870514
+    },
+    {
+      "chi_so": 1459,
+      "lop_that": "2",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.5336328148841858,
+      "diem_lop_that": 0.43768736720085144
+    },
+    {
+      "chi_so": 1393,
+      "lop_that": "5",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.5326350331306458,
+      "diem_lop_that": 0.4661675989627838
+    },
+    {
+      "chi_so": 6651,
+      "lop_that": "0",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.5285081267356873,
+      "diem_lop_that": 0.24366281926631927
+    },
+    {
+      "chi_so": 6783,
+      "lop_that": "1",
+      "lop_du_doan": "6",
+      "do_tin_cay": 0.5279335379600525,
+      "diem_lop_that": 0.44149038195610046
+    },
+    {
+      "chi_so": 1737,
+      "lop_that": "5",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.5095013380050659,
+      "diem_lop_that": 0.26844802498817444
+    },
+    {
+      "chi_so": 3073,
+      "lop_that": "1",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.5093964338302612,
+      "diem_lop_that": 0.45945364236831665
+    },
+    {
+      "chi_so": 4284,
+      "lop_that": "9",
+      "lop_du_doan": "5",
+      "do_tin_cay": 0.5059934854507446,
+      "diem_lop_that": 0.400803804397583
+    },
+    {
+      "chi_so": 4823,
+      "lop_that": "9",
+      "lop_du_doan": "4",
+      "do_tin_cay": 0.501071572303772,
+      "diem_lop_that": 0.4911932647228241
+    },
+    {
+      "chi_so": 2018,
+      "lop_that": "1",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.4971067011356354,
+      "diem_lop_that": 0.08438239991664886
+    },
+    {
+      "chi_so": 4699,
+      "lop_that": "6",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.4882347285747528,
+      "diem_lop_that": 0.48804351687431335
+    },
+    {
+      "chi_so": 2921,
+      "lop_that": "3",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.468132883310318,
+      "diem_lop_that": 0.44150209426879883
+    },
+    {
+      "chi_so": 4306,
+      "lop_that": "3",
+      "lop_du_doan": "8",
+      "do_tin_cay": 0.4472685754299164,
+      "diem_lop_that": 0.37413284182548523
+    },
+    {
+      "chi_so": 4078,
+      "lop_that": "9",
+      "lop_du_doan": "3",
+      "do_tin_cay": 0.4299803078174591,
+      "diem_lop_that": 0.11086025834083557
+    },
+    {
+      "chi_so": 1039,
+      "lop_that": "7",
+      "lop_du_doan": "1",
+      "do_tin_cay": 0.4266853332519531,
+      "diem_lop_that": 0.1066371351480484
+    },
+    {
+      "chi_so": 9679,
+      "lop_that": "6",
+      "lop_du_doan": "2",
+      "do_tin_cay": 0.3834950625896454,
+      "diem_lop_that": 0.14034613966941833
+    },
+    {
+      "chi_so": 8527,
+      "lop_that": "4",
+      "lop_du_doan": "7",
+      "do_tin_cay": 0.3778855800628662,
+      "diem_lop_that": 0.31279727816581726
+    }
+  ]
+}

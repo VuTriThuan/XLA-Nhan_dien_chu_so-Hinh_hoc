@@ -1,0 +1,44 @@
+[
+  {
+    "args": [
+      "examples/digit_light/input.png",
+      "--mode",
+      "digit",
+      "--out",
+      "audit/cli_digit"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"mode\": \"digit\",\n  \"bbox\": [\n    30,\n    22,\n    89,\n    97\n  ],\n  \"threshold\": 0,\n  \"polarity\": \"dark\",\n  \"edge_dark_fraction\": 0.0,\n  \"shape\": [\n    28,\n    28\n  ],\n  \"range\": [\n    0.0,\n    1.0\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "audit/real_scan_circle_input.png",
+      "--mode",
+      "shape",
+      "--out",
+      "audit/cli_shape"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"mode\": \"shape\",\n  \"bbox\": [\n    10,\n    8,\n    86,\n    77\n  ],\n  \"threshold\": 128,\n  \"polarity\": \"dark\",\n  \"edge_dark_fraction\": 0.0,\n  \"shape\": [\n    64,\n    64\n  ],\n  \"range\": [\n    0.0,\n    1.0\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "missing_audit_file.png"
+    ],
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[Errno 2] No such file or directory: 'missing_audit_file.png'\n"
+  },
+  {
+    "args": [
+      "audit/hole_input.png",
+      "--median",
+      "2"
+    ],
+    "exit": 2,
+    "stdout": "",
+    "stderr": "Cua so phai la so nguyen duong le\n"
+  }
+]

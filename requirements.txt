@@ -1,0 +1,8 @@
+# Thư viện cho toàn bộ dự án (ứng dụng, kiểm thử, huấn luyện lại, đánh giá).
+# Đã chạy thử với Python 3.10, numpy 1.26.4, Pillow 12.2, torch 2.2.2, matplotlib 3.10, pytest 9.2.
+numpy>=1.26
+Pillow>=10
+torch>=2.2
+matplotlib>=3.8
+pytest>=8
+

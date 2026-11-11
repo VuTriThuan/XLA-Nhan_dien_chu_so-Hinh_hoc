@@ -1,0 +1,37 @@
+{
+  "bai_toan": "hinh_hoc",
+  "bien_the": "co_so",
+  "hat": 42,
+  "so_epoch_yeu_cau": 20,
+  "co_lo": 64,
+  "toc_do_hoc": 0.001,
+  "bo_toi_uu": "Adam",
+  "lich_giam_toc_do": null,
+  "ham_mat_mat": "CrossEntropyLoss trên logits",
+  "kien_truc": {
+    "so_lop": 3,
+    "batch_norm": false,
+    "dropout": 0.0
+  },
+  "so_tham_so": 56259,
+  "tang_cuong": false,
+  "mo_ta_tang_cuong": null,
+  "so_train": 9450,
+  "so_validation": 2025,
+  "thiet_bi": "cpu",
+  "so_luong": 6,
+  "phien_ban": {
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "python": "3.10.11",
+    "he_dieu_hanh": "macOS-13.7.6-x86_64-i386-64bit"
+  },
+  "tieu_chi_chon": "accuracy validation cao nhất, hòa thì loss validation thấp nhất; không đọc test",
+  "bat_dau_utc": "2026-11-10T16:10:00.416208+00:00",
+  "so_epoch_hoan_thanh": 20,
+  "epoch_tot_nhat": 15,
+  "accuracy_validation_tot_nhat": 0.9975308641975309,
+  "loss_validation_tot_nhat": 0.013935213559939538,
+  "giay_huan_luyen": 41.582095505000325,
+  "sha256_checkpoint": "56e4f9a22893d4528b04df74a2c9f24275fff503649bbfd9ce87e2ff6af872b2"
+}

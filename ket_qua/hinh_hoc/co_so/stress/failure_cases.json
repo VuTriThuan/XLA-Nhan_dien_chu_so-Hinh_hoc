@@ -1,0 +1,341 @@
+{
+  "tong_so_loi": 42,
+  "cac_loi": [
+    {
+      "chi_so": 28,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 1.0,
+      "diem_lop_that": 2.9464114481569936e-10,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 23,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999995231628418,
+      "diem_lop_that": 1.9915941725651143e-12,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 272,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.999998927116394,
+      "diem_lop_that": 1.0534789680605172e-06,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 63,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999918937683105,
+      "diem_lop_that": 1.725163123467155e-08,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 97,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999823570251465,
+      "diem_lop_that": 3.0544548224042956e-08,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 78,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9999791383743286,
+      "diem_lop_that": 4.7556422799743814e-08,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 19,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999759197235107,
+      "diem_lop_that": 1.041010364133399e-05,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 4,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999179840087891,
+      "diem_lop_that": 5.381593837228138e-09,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 278,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.999907374382019,
+      "diem_lop_that": 9.246263653039932e-05,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 15,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9994801878929138,
+      "diem_lop_that": 0.00045312504516914487,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 56,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9992455244064331,
+      "diem_lop_that": 0.0007302043959498405,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 258,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9990634322166443,
+      "diem_lop_that": 0.0009364790166728199,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 297,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9979799389839172,
+      "diem_lop_that": 0.002020093146711588,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 93,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9979645013809204,
+      "diem_lop_that": 0.002035399666056037,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 54,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9964807629585266,
+      "diem_lop_that": 8.359601224583457e-07,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 244,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9948964715003967,
+      "diem_lop_that": 0.005103419069200754,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 2,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9935666918754578,
+      "diem_lop_that": 0.003805248299613595,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 14,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9929366707801819,
+      "diem_lop_that": 6.244918495212914e-06,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 204,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9900785684585571,
+      "diem_lop_that": 0.009918452240526676,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 235,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9861471056938171,
+      "diem_lop_that": 0.013852630741894245,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 289,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.971336305141449,
+      "diem_lop_that": 0.022711850702762604,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 222,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9684045910835266,
+      "diem_lop_that": 0.031595416367053986,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 85,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9658665657043457,
+      "diem_lop_that": 0.010817723348736763,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 95,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9643585681915283,
+      "diem_lop_that": 3.3898861602210673e-06,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 74,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9620380401611328,
+      "diem_lop_that": 0.00035503259277902544,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 228,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9513007402420044,
+      "diem_lop_that": 0.048699043691158295,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 89,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9403684139251709,
+      "diem_lop_that": 0.0596315898001194,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 16,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.8637654185295105,
+      "diem_lop_that": 0.11303732544183731,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 99,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.8571503162384033,
+      "diem_lop_that": 0.0002687484957277775,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 83,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.850770890712738,
+      "diem_lop_that": 0.1461838334798813,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 34,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.806813657283783,
+      "diem_lop_that": 0.19318629801273346,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 239,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.760998547077179,
+      "diem_lop_that": 0.23900070786476135,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 117,
+      "lop_that": "tam_giac",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.7523086071014404,
+      "diem_lop_that": 0.24767467379570007,
+      "bien_the": "tam_giac_bat_ky"
+    },
+    {
+      "chi_so": 241,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.7402099967002869,
+      "diem_lop_that": 0.25978994369506836,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 127,
+      "lop_that": "tam_giac",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.7233598232269287,
+      "diem_lop_that": 0.2766294479370117,
+      "bien_the": "tam_giac_deu"
+    },
+    {
+      "chi_so": 94,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.7197163105010986,
+      "diem_lop_that": 0.19549433887004852,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 136,
+      "lop_that": "tam_giac",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.7067548632621765,
+      "diem_lop_that": 0.2932206690311432,
+      "bien_the": "tam_giac_vuong"
+    },
+    {
+      "chi_so": 81,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.6353797912597656,
+      "diem_lop_that": 0.36462023854255676,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 25,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.5423561930656433,
+      "diem_lop_that": 0.03119567409157753,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 217,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.5210046768188477,
+      "diem_lop_that": 0.4706176519393921,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 37,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.5070670247077942,
+      "diem_lop_that": 0.4921548068523407,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 178,
+      "lop_that": "tam_giac",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.5060826539993286,
+      "diem_lop_that": 0.028947869315743446,
+      "bien_the": "tam_giac_deu"
+    }
+  ]
+}

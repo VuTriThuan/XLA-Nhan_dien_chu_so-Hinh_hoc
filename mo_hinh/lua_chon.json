@@ -1,0 +1,43 @@
+{
+  "chu_so": {
+    "bien_the_duoc_chon": "cai_tien",
+    "tieu_chi": "accuracy validation, rồi loss validation; không đọc test",
+    "khong_dung_test": true,
+    "ung_vien": {
+      "co_so": {
+        "epoch": 12,
+        "accuracy_validation": 0.9888333333333333,
+        "loss_validation": 0.03759721899032593,
+        "sha256_checkpoint": "5b94fa70cf67c7de647295171c9896d8d9ede07c0ab31dc45a2d3df32972ff8d"
+      },
+      "cai_tien": {
+        "epoch": 12,
+        "accuracy_validation": 0.9901666666666666,
+        "loss_validation": 0.0288907044728597,
+        "sha256_checkpoint": "6fc0cd4b276c49f9e34e3a4ab18f10c4e5702bfe68cbc5e96ed89cd9c5bdde01"
+      }
+    },
+    "sha256_tot_nhat": "6fc0cd4b276c49f9e34e3a4ab18f10c4e5702bfe68cbc5e96ed89cd9c5bdde01"
+  },
+  "hinh_hoc": {
+    "bien_the_duoc_chon": "cai_tien",
+    "tieu_chi": "accuracy validation, rồi loss validation; không đọc test",
+    "khong_dung_test": true,
+    "ung_vien": {
+      "co_so": {
+        "epoch": 15,
+        "accuracy_validation": 0.9975308641975309,
+        "loss_validation": 0.013935213559939538,
+        "sha256_checkpoint": "56e4f9a22893d4528b04df74a2c9f24275fff503649bbfd9ce87e2ff6af872b2"
+      },
+      "cai_tien": {
+        "epoch": 16,
+        "accuracy_validation": 0.9990123456790123,
+        "loss_validation": 0.005654370343243635,
+        "sha256_checkpoint": "252616acb95ded9f99c065f8f80f762131e987dca379f28787e0a7376d03ddc2"
+      }
+    },
+    "chot_luc_utc": "2026-11-10T16:12:21.193900+00:00",
+    "sha256_tot_nhat": "252616acb95ded9f99c065f8f80f762131e987dca379f28787e0a7376d03ddc2"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "mo_ta": "MNIST test phóng to, làm mỏng nét (Zhang-Suen) rồi dày lại; ảnh tổng hợp, không phải chữ viết tay thật",
+  "so_anh_moi_muc": 150,
+  "hat": 5,
+  "do_chinh_xac": {
+    "0.12": {
+      "cu_song_tuyen_tinh": 0.9933333333333333,
+      "dien_tich": 0.9933333333333333,
+      "dien_tich_keo_gian": 0.9933333333333333
+    },
+    "0.08": {
+      "cu_song_tuyen_tinh": 0.9866666666666667,
+      "dien_tich": 0.9866666666666667,
+      "dien_tich_keo_gian": 0.9866666666666667
+    },
+    "0.05": {
+      "cu_song_tuyen_tinh": 0.98,
+      "dien_tich": 0.9866666666666667,
+      "dien_tich_keo_gian": 0.9866666666666667
+    },
+    "0.03": {
+      "cu_song_tuyen_tinh": 0.9066666666666666,
+      "dien_tich": 0.98,
+      "dien_tich_keo_gian": 0.98
+    },
+    "0.015": {
+      "cu_song_tuyen_tinh": 0.5266666666666666,
+      "dien_tich": 0.82,
+      "dien_tich_keo_gian": 0.9533333333333334
+    }
+  }
+}

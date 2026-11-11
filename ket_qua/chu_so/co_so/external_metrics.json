@@ -1,0 +1,580 @@
+{
+  "trang_thai": "ready",
+  "thu_muc": "/Users/trithuan/Desktop/Xử lý ảnh/BTL/du_lieu/chu_so/viet_tay",
+  "so_anh": 58,
+  "so_luong_moi_lop": {
+    "0": 6,
+    "1": 6,
+    "2": 6,
+    "3": 9,
+    "4": 5,
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 5,
+    "9": 6
+  },
+  "yeu_cau": "ít nhất 50 ảnh khác nhau, ít nhất 5 ảnh mỗi lớp",
+  "so_anh_trung_bi_bo_qua": 0,
+  "nguon_goc": "tệp do người dùng cung cấp; nguồn gốc 'người thật' do người thu khai báo, không suy ra bằng mô hình",
+  "luu_y": "chỉ dùng để đánh giá sau khi chốt mô hình; không dùng để huấn luyện hay chỉnh mô hình",
+  "chi_so": {
+    "so_anh": 58,
+    "so_dung": 49,
+    "so_sai": 9,
+    "so_khong_hop_le": 0,
+    "do_chinh_xac": 0.8448275862068966,
+    "khoang_wilson_95": [
+      0.730660191401075,
+      0.9161550804698196
+    ],
+    "precision_macro": 0.8790476190476191,
+    "recall_macro": 0.8400000000000001,
+    "f1_macro": 0.8395299145299144,
+    "ma_tran_nham_lan": [
+      [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "theo_lop": [
+      {
+        "lop": "0",
+        "so_mau": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "lop": "1",
+        "so_mau": 6,
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923
+      },
+      {
+        "lop": "2",
+        "so_mau": 6,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      {
+        "lop": "3",
+        "so_mau": 9,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999
+      },
+      {
+        "lop": "4",
+        "so_mau": 5,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999
+      },
+      {
+        "lop": "5",
+        "so_mau": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "lop": "6",
+        "so_mau": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "lop": "7",
+        "so_mau": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "lop": "8",
+        "so_mau": 5,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889
+      },
+      {
+        "lop": "9",
+        "so_mau": 6,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25
+      }
+    ]
+  },
+  "anh_loi_dau_vao": [],
+  "mau": [
+    {
+      "tep": "trang01_01.png",
+      "sha256": "33294f7d2b1bd97c41bf96637dccb6d8df6665199bd76125b2f8dbdee16a4185",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang01_09.png",
+      "sha256": "77e266a0d1d100a71edef09b037789599c561c4e70b53de0827e3529334776b9",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang01_19.png",
+      "sha256": "806348f20938801169125e6d51ee9a86475f68496674ae5026dbea1afe8fd44d",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang02_01.png",
+      "sha256": "29cd1c8bcf48e8574f8e41c847f8ad9a6a03582307320eb82e072f70c08279a8",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang02_13.png",
+      "sha256": "25f72597be6f654c7081e33e6de0b6634afb1eab4f6ef600002b32696d18f02c",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang02_23.png",
+      "sha256": "067308dc5a34747793417b5e1584ace818340cf1b8961c1db4a7c8bded15c286",
+      "nhan": "0",
+      "du_doan": "0"
+    },
+    {
+      "tep": "trang01_02.png",
+      "sha256": "181fc7bc778781bc1de637917eaa25a1e76f7744b908efd1ca1dd69653969c97",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang01_14.png",
+      "sha256": "bac613e8ba9fb136f9b3e447b5dfa088c279eb89af2b5b58b7a43e80552fd7ee",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang01_23.png",
+      "sha256": "5e4f74cbf8cb337e6608e436aa97be3e8ac1bb4c0ea88b3ce269020cee361907",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang02_02.png",
+      "sha256": "07d3c6f91444f366946133ce35ae82d82060d7ee3ceda6fd60ccc36654bacde0",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang02_18.png",
+      "sha256": "8dcf891de4bee7952c9b9abe70153a06b6c3f2e7e316dcf7b29215d904b4bd0e",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang02_22.png",
+      "sha256": "3e217ae9325068c512b234f592cb98d16cf5c2b791c5a4b6a62f8a38ca0cd756",
+      "nhan": "1",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang01_03.png",
+      "sha256": "0433fe8cdb9c5522b7ede0a68980851acd719edaf3aa8f632a8487108f92ccb8",
+      "nhan": "2",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang01_13.png",
+      "sha256": "afab229fd66c8962a230f5771ae6922a882e5b26a4d42b955a438e9122b4651d",
+      "nhan": "2",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang01_22.png",
+      "sha256": "f94f2f6834948046f34b7b1f0696ec658614d18704ecf1254d51c0537e72774b",
+      "nhan": "2",
+      "du_doan": "1"
+    },
+    {
+      "tep": "trang02_03.png",
+      "sha256": "572ab69fcb62ac090a7f306cccbbb6ffd079c85c8891a8970c1c91e42135422e",
+      "nhan": "2",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang02_15.png",
+      "sha256": "c1545ce9fe8211dc28171328a5cfae5b2de67a75505adfd04254af06e00a9ce7",
+      "nhan": "2",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang02_19.png",
+      "sha256": "1d41373cf769c1d5b0649dc3a2d3e5d5cbbe90bd6e504cf2b67677fc9db7a140",
+      "nhan": "2",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang01_15.png",
+      "sha256": "8cd5556e540c717ff0288c4d7ace02e7ee6b9cc19cdf07eb639558affa18d8b1",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_26.png",
+      "sha256": "5fc32620272b5855585801b554816985ab7ed0a4fbfb8db54fcf26a9088ddc9a",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang02_04.png",
+      "sha256": "24bb3e93ac136336b76d34b78cc8adf5b440cb76c2ef8ed12b1cc5a3e45230cc",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang02_20.png",
+      "sha256": "b5d8be9e2d29eef18c207d029ebe30bffaa8b9e8bc84a97079ad018352e47d9a",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang03_01.png",
+      "sha256": "705b3e4eb256a7fca3cfeb572e4a96a209e82bf44bdc135259b10dfcc59d691c",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang03_02.png",
+      "sha256": "2f8d95f2fed7b26266df1b29ac372861c6d8460026d97aea4d38edb1fbc6e654",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang03_03.png",
+      "sha256": "7887dccc5137b6ef438af116d1c470e70515fc12ff2f079fb232292e2a81d988",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang03_04.png",
+      "sha256": "58ec5bf461f1c81920c719700329b3f40ccbe96362c4513b37fc7e9c64259045",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang03_05.png",
+      "sha256": "b54dd5a14c15afc9a23fb40571bd7b1644110db7df20d44c1f0472abbaf76f5c",
+      "nhan": "3",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_07.png",
+      "sha256": "1cf32f86e42f3339869f28af492e37c8e8ff5acdcfad8ba33cb1d1497b0cbd59",
+      "nhan": "4",
+      "du_doan": "4"
+    },
+    {
+      "tep": "trang01_16.png",
+      "sha256": "515c21efbeab3df5db44122be194391b525f18efea2f7e049bfa8c8d943af144",
+      "nhan": "4",
+      "du_doan": "2"
+    },
+    {
+      "tep": "trang01_25.png",
+      "sha256": "0e0712e16a8086ee440fa0419add69bf05ab25d457c469b4bef683bd11a6ee23",
+      "nhan": "4",
+      "du_doan": "4"
+    },
+    {
+      "tep": "trang02_10.png",
+      "sha256": "129ba89537c02bfba544ed06c7c5b350a03ba9ba2c9ad67b8fb6365463909a8f",
+      "nhan": "4",
+      "du_doan": "4"
+    },
+    {
+      "tep": "trang02_14.png",
+      "sha256": "0e05e8ae5c89ef352bfc8dd36963913d5baf890f2da247639ddb1964e881ecfd",
+      "nhan": "4",
+      "du_doan": "9"
+    },
+    {
+      "tep": "trang01_08.png",
+      "sha256": "a71899614044bafa85cb2804580f3aa1a792b769587fbc8fdfcf716a9de2000e",
+      "nhan": "5",
+      "du_doan": "5"
+    },
+    {
+      "tep": "trang01_12.png",
+      "sha256": "71c12e91f67fe6823bc115abdeb7a0a6cde7f77368871ffb4caa95a36c813061",
+      "nhan": "5",
+      "du_doan": "5"
+    },
+    {
+      "tep": "trang01_28.png",
+      "sha256": "addbe963787cfc4aee0618b5198289811d0390de5e12d13ec0af35614e7cee06",
+      "nhan": "5",
+      "du_doan": "5"
+    },
+    {
+      "tep": "trang02_06.png",
+      "sha256": "b2f7fb545031523667b042120c70d1065f0e1cd8e8553837f4ae93da6a88cfff",
+      "nhan": "5",
+      "du_doan": "5"
+    },
+    {
+      "tep": "trang02_09.png",
+      "sha256": "6c2ce61fa241ee46efde6b6e750de3813b05d8b660d9a05a7909e6fc11d619fc",
+      "nhan": "5",
+      "du_doan": "5"
+    },
+    {
+      "tep": "trang01_04.png",
+      "sha256": "216f6cd2719821d194a1c3a6352b3c3c3b64f96e0938334e510bbf93d098c44a",
+      "nhan": "6",
+      "du_doan": "6"
+    },
+    {
+      "tep": "trang01_21.png",
+      "sha256": "3f1b0643e6e2c1bf924a2949ed8bba2f2df832c898835a099c9c48553a4d49ec",
+      "nhan": "6",
+      "du_doan": "6"
+    },
+    {
+      "tep": "trang01_24.png",
+      "sha256": "e6cae7e04a73f31ca72e1f4cc6e0ba302f669b20a95d11d0b646677626fa4a7d",
+      "nhan": "6",
+      "du_doan": "6"
+    },
+    {
+      "tep": "trang02_17.png",
+      "sha256": "73a42db054a274285391539f4cf663c0aeae5c5a2b118b5b8685255280b2f394",
+      "nhan": "6",
+      "du_doan": "6"
+    },
+    {
+      "tep": "trang02_21.png",
+      "sha256": "9e6f4c4aa581ca27318157ac1a2fc7b87e05d218c60983679413182c700d6707",
+      "nhan": "6",
+      "du_doan": "6"
+    },
+    {
+      "tep": "trang01_05.png",
+      "sha256": "0dd17390d678f1a9a4caf579438a95f501764fbbf195c8989144a739ae0abd09",
+      "nhan": "7",
+      "du_doan": "7"
+    },
+    {
+      "tep": "trang01_17.png",
+      "sha256": "86f9ed3cecbeb0eca6bdf8f9200893acdcd409717c52ab2d65ef970c3142d3ed",
+      "nhan": "7",
+      "du_doan": "7"
+    },
+    {
+      "tep": "trang01_27.png",
+      "sha256": "5be7153c322a0c4937a2f0baa731034c97339ebe46fddfd16556bec91bc4fa9d",
+      "nhan": "7",
+      "du_doan": "7"
+    },
+    {
+      "tep": "trang02_07.png",
+      "sha256": "aa1ac5e3efa1ac37d8befaea61cc47eaf8c73659bf2e8b41fee29747120485c4",
+      "nhan": "7",
+      "du_doan": "7"
+    },
+    {
+      "tep": "trang02_11.png",
+      "sha256": "4e5b132e3ca6e04d11df35231e09a69037e56cc5ba21909d992591f9749052aa",
+      "nhan": "7",
+      "du_doan": "7"
+    },
+    {
+      "tep": "trang01_06.png",
+      "sha256": "451121d3ba50738452dabe90a3779aea01c7628785156c7e705f9f3e591e7124",
+      "nhan": "8",
+      "du_doan": "8"
+    },
+    {
+      "tep": "trang01_11.png",
+      "sha256": "4b51e327123db1baa0dfb0eb1677119591b583557653eefca2cb5cdaa0ce7842",
+      "nhan": "8",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_29.png",
+      "sha256": "d283038f8c8ab101f3d25a51d4e89f967d2d7f25dc42b52e6d370bc4fa0f9366",
+      "nhan": "8",
+      "du_doan": "8"
+    },
+    {
+      "tep": "trang02_08.png",
+      "sha256": "afa397dad3dfa141b0a432c5a4b61c3d3779a6d0a9962b3271c3917577ad4a9f",
+      "nhan": "8",
+      "du_doan": "8"
+    },
+    {
+      "tep": "trang02_12.png",
+      "sha256": "b11a4f75881cb9d87c9a0c6bc3b986df783e363703114d727ac51811e9cce144",
+      "nhan": "8",
+      "du_doan": "8"
+    },
+    {
+      "tep": "trang01_10.png",
+      "sha256": "fc7e7fc467cf7bc197f1dfcf7bda3fb189c9f2e0e6fe180f1d853fdf3e3328e0",
+      "nhan": "9",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_18.png",
+      "sha256": "e5fec374f93896e4d284029dfdb671db94ec98ed05ef7d83249360acae63af23",
+      "nhan": "9",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_20.png",
+      "sha256": "e44d5ca1a8b673a8479250deded51ea0ee90d5ced4162177390310cd8bf8697e",
+      "nhan": "9",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang01_30.png",
+      "sha256": "186b68a554a6cf0c37a54cca2232de1ad1db5dfc10b54f4651ec923d137b346d",
+      "nhan": "9",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang02_05.png",
+      "sha256": "e9ca64ecaf531a170679582eac0749d92dfd3280eac4375aaf03263c70643cff",
+      "nhan": "9",
+      "du_doan": "3"
+    },
+    {
+      "tep": "trang02_16.png",
+      "sha256": "b4b1dd614b86a4988c7fe422d6649ed8cf4aa91fef30b02f4566a637324238e8",
+      "nhan": "9",
+      "du_doan": "9"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "bien_the_duoc_chon": "cai_tien",
+  "nguon_chon": "chỉ validation",
+  "chenh_lech_accuracy_cai_tien_tru_co_so": -9.999999999998899e-05,
+  "co_so_sai_cai_tien_dung": 37,
+  "co_so_dung_cai_tien_sai": 38,
+  "ca_hai_sai": 47,
+  "ca_hai_dung": 9878,
+  "mcnemar_chinh_xac_hai_phia_p": 1.0,
+  "so_hat": 1,
+  "han_che": "Một hạt, một bộ đánh giá. Kiểm định ghép cặp không chứng minh hiệu năng trên ảnh ngoài."
+}

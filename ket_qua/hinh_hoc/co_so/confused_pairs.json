@@ -1,0 +1,26 @@
+[
+  {
+    "lop_that": "chu_nhat",
+    "lop_du_doan": "tam_giac",
+    "so_luong": 4,
+    "ti_le_cua_lop_that": 0.005925925925925926
+  },
+  {
+    "lop_that": "tron",
+    "lop_du_doan": "chu_nhat",
+    "so_luong": 4,
+    "ti_le_cua_lop_that": 0.005925925925925926
+  },
+  {
+    "lop_that": "chu_nhat",
+    "lop_du_doan": "tron",
+    "so_luong": 2,
+    "ti_le_cua_lop_that": 0.002962962962962963
+  },
+  {
+    "lop_that": "tron",
+    "lop_du_doan": "tam_giac",
+    "so_luong": 1,
+    "ti_le_cua_lop_that": 0.0014814814814814814
+  }
+]

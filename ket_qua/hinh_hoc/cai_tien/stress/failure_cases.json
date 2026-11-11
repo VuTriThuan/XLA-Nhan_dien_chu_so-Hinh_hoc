@@ -1,0 +1,245 @@
+{
+  "tong_so_loi": 30,
+  "cac_loi": [
+    {
+      "chi_so": 272,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999886751174927,
+      "diem_lop_that": 1.016904479911318e-05,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 278,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999760389328003,
+      "diem_lop_that": 1.5068494576553348e-05,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 63,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9999557733535767,
+      "diem_lop_that": 4.391249149193754e-06,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 97,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9998886585235596,
+      "diem_lop_that": 8.857300599629525e-06,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 28,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9998666048049927,
+      "diem_lop_that": 2.9703158361371607e-05,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 258,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9998446702957153,
+      "diem_lop_that": 0.00013313518138602376,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 19,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9995207786560059,
+      "diem_lop_that": 0.00013546593254432082,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 4,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9991214871406555,
+      "diem_lop_that": 1.8301265299669467e-05,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 14,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9990345239639282,
+      "diem_lop_that": 0.0008178124553523958,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 15,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9988821148872375,
+      "diem_lop_that": 0.0003228098212275654,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 204,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9971575736999512,
+      "diem_lop_that": 0.0028141788206994534,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 78,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.990760862827301,
+      "diem_lop_that": 0.002867341274395585,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 254,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9841340184211731,
+      "diem_lop_that": 0.01545728463679552,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 244,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9654484987258911,
+      "diem_lop_that": 0.034423429518938065,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 23,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9488213062286377,
+      "diem_lop_that": 2.8936899525433546e-06,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 138,
+      "lop_that": "tam_giac",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9466360807418823,
+      "diem_lop_that": 0.05314640700817108,
+      "bien_the": "tam_giac_deu"
+    },
+    {
+      "chi_so": 56,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.9430857300758362,
+      "diem_lop_that": 0.0509558729827404,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 289,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.9080478549003601,
+      "diem_lop_that": 0.09195151180028915,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 219,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.8999103307723999,
+      "diem_lop_that": 0.1000789925456047,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 95,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.8248739242553711,
+      "diem_lop_that": 0.0009567623492330313,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 239,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.7909029126167297,
+      "diem_lop_that": 0.20909014344215393,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 54,
+      "lop_that": "tron",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.7682629823684692,
+      "diem_lop_that": 0.0002910876355599612,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 274,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.7642382383346558,
+      "diem_lop_that": 0.23233190178871155,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 74,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.7153714895248413,
+      "diem_lop_that": 0.056119903922080994,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 235,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.6962272524833679,
+      "diem_lop_that": 0.30377256870269775,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 230,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.6906065344810486,
+      "diem_lop_that": 0.2972416579723358,
+      "bien_the": "vuong"
+    },
+    {
+      "chi_so": 276,
+      "lop_that": "chu_nhat",
+      "lop_du_doan": "tam_giac",
+      "do_tin_cay": 0.6018718481063843,
+      "diem_lop_that": 0.3981209993362427,
+      "bien_the": "chu_nhat"
+    },
+    {
+      "chi_so": 18,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.5949010252952576,
+      "diem_lop_that": 0.4050968289375305,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 99,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.5835926532745361,
+      "diem_lop_that": 0.007424035109579563,
+      "bien_the": "elip_luon_song"
+    },
+    {
+      "chi_so": 2,
+      "lop_that": "tron",
+      "lop_du_doan": "chu_nhat",
+      "do_tin_cay": 0.48256200551986694,
+      "diem_lop_that": 0.4655399024486542,
+      "bien_the": "elip_luon_song"
+    }
+  ]
+}

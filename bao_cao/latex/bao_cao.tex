@@ -1,0 +1,45 @@
+% Báo cáo bài tập lớn môn Xử lý ảnh. Biên dịch bằng XeLaTeX (Overleaf: chọn XeLaTeX, file chính bao_cao.tex).
+% Dòng lệnh: python3 bao_cao/latex/bien_dich.py   (cần xelatex hoặc tectonic; tự đồng bộ hình từ ket_qua/)
+\documentclass[a4paper,12pt]{report}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
+\usepackage[top=2cm,bottom=2cm,left=3cm,right=2cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,setspace,hyperref,xurl,float}
+\hypersetup{hidelinks,pdftitle={Nhận diện chữ số và hình dạng đơn giản bằng mạng neural}}
+\onehalfspacing\raggedbottom
+\setlength{\parskip}{6pt}
+\graphicspath{{hinh/}}
+\newcommand{\hinh}[3]{\begin{figure}[H]\centering\includegraphics[width=#2\textwidth]{#1}\caption{#3}\end{figure}}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\large HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG}\\[1.2cm]
+{\large BÁO CÁO BÀI TẬP LỚN}\\[0.4cm]
+{\large Môn: Xử lý ảnh}\\[2cm]
+{\Large\bfseries NHẬN DIỆN CHỮ SỐ VÀ HÌNH DẠNG ĐƠN GIẢN\\BẰNG MẠNG NEURAL}\\[3cm]
+\begin{flushleft}\hspace{3cm}
+\begin{tabular}{@{}ll}
+Nhóm thực hiện: & \textit{[điền tên nhóm và thành viên]}\\
+Giảng viên hướng dẫn: & \textit{[điền tên giảng viên]}\\
+Thời điểm: & \textit{[điền tháng/năm]}
+\end{tabular}
+\end{flushleft}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\input{chuong/1_tong_quan}
+\input{chuong/2_tien_xu_ly}
+\input{chuong/3_cnn_chu_so}
+\input{chuong/4_cnn_hinh_hoc}
+\input{chuong/5_tich_hop}
+\input{chuong/6_ket_luan}
+
+\bibliographystyle{plain}
+\bibliography{tai_lieu_tham_khao}
+
+\end{document}

@@ -1,0 +1,26 @@
+[
+  {
+    "lop_that": "chu_nhat",
+    "lop_du_doan": "tam_giac",
+    "so_luong": 13,
+    "ti_le_cua_lop_that": 0.13
+  },
+  {
+    "lop_that": "tron",
+    "lop_du_doan": "tam_giac",
+    "so_luong": 9,
+    "ti_le_cua_lop_that": 0.09
+  },
+  {
+    "lop_that": "tron",
+    "lop_du_doan": "chu_nhat",
+    "so_luong": 7,
+    "ti_le_cua_lop_that": 0.07
+  },
+  {
+    "lop_that": "tam_giac",
+    "lop_du_doan": "chu_nhat",
+    "so_luong": 1,
+    "ti_le_cua_lop_that": 0.01
+  }
+]

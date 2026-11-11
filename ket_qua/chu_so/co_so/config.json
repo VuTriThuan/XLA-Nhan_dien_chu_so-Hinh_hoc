@@ -1,0 +1,38 @@
+{
+  "bai_toan": "chu_so",
+  "bien_the": "co_so",
+  "hat": 42,
+  "so_epoch_yeu_cau": 12,
+  "co_lo": 128,
+  "toc_do_hoc": 0.001,
+  "bo_toi_uu": "Adam",
+  "lich_giam_toc_do": "StepLR(step_size=8,gamma=0.3)",
+  "ham_mat_mat": "CrossEntropyLoss on raw logits",
+  "kien_truc": {
+    "so_lop": 10,
+    "batch_norm": false,
+    "dropout": 0.25
+  },
+  "so_tham_so": 56714,
+  "tang_cuong": false,
+  "mo_ta_tang_cuong": null,
+  "so_train": 54000,
+  "so_validation": 6000,
+  "thiet_bi": "cpu",
+  "so_luong": 6,
+  "phien_ban": {
+    "torch": "2.15.0+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "he_dieu_hanh": "Windows-11-10.0.26300-SP0"
+  },
+  "tieu_chi_chon": "max validation accuracy, then min validation cross entropy; never test",
+  "bat_dau_utc": "2026-11-09T14:03:08.848818+00:00",
+  "so_epoch_hoan_thanh": 12,
+  "epoch_tot_nhat": 12,
+  "accuracy_validation_tot_nhat": 0.9888333333333333,
+  "loss_validation_tot_nhat": 0.03759721899032593,
+  "giay_huan_luyen": 109.37369649999891,
+  "sha256_checkpoint": "5b94fa70cf67c7de647295171c9896d8d9ede07c0ab31dc45a2d3df32972ff8d",
+  "nguon_goc": "chuyển từ BTL/cnn_chu_so/ket_qua (huấn luyện gốc trên Windows)"
+}

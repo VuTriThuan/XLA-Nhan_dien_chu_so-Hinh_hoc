@@ -1,0 +1,32 @@
+test_aspect_ratio_bbox_center_and_tensor_values (test_audit.AuditTests.test_aspect_ratio_bbox_center_and_tensor_values) ... ok
+test_border_closing_preserves_foreground (test_audit.AuditTests.test_border_closing_preserves_foreground) ... ok
+test_broken_strokes_and_thin_line (test_audit.AuditTests.test_broken_strokes_and_thin_line) ... ok
+test_components_diagonal_ties_and_empty (test_audit.AuditTests.test_components_diagonal_ties_and_empty) ... ok
+test_float_255_and_normalized_rgba (test_audit.AuditTests.test_float_255_and_normalized_rgba) ... ok
+test_invalid_images (test_audit.AuditTests.test_invalid_images) ... ok
+test_invalid_parameters (test_audit.AuditTests.test_invalid_parameters) ... ok
+test_median_against_sorted_neighborhoods (test_audit.AuditTests.test_median_against_sorted_neighborhoods) ... ok
+test_morphology_against_scalar_reference (test_audit.AuditTests.test_morphology_against_scalar_reference) ... ok
+test_noise_repair_reaches_output (test_audit.AuditTests.test_noise_repair_reaches_output) ... ok
+test_otsu_against_explicit_class_means (test_audit.AuditTests.test_otsu_against_explicit_class_means) ... ok
+test_polarity_override_when_border_is_foreground (test_audit.AuditTests.test_polarity_override_when_border_is_foreground) ... ok
+test_resize_reference_and_identity (test_audit.AuditTests.test_resize_reference_and_identity) ... ok
+test_rgb_primary_and_alpha (test_audit.AuditTests.test_rgb_primary_and_alpha) ... ok
+test_salt_and_pepper_repair (test_audit.AuditTests.test_salt_and_pepper_repair) ... ok
+test_small_image_and_centering_contract (test_audit.AuditTests.test_small_image_and_centering_contract) ... ok
+test_ambiguous_warns_and_explicit_override (test_polarity_metadata.PolarityMetadataTests.test_ambiguous_warns_and_explicit_override) ... ok
+test_clean_images_no_warning_or_pixel_change (test_polarity_metadata.PolarityMetadataTests.test_clean_images_no_warning_or_pixel_change) ... ok
+test_cli_metadata_warning_stderr_and_override (test_polarity_metadata.PolarityMetadataTests.test_cli_metadata_warning_stderr_and_override) ... ok
+test_filters_against_known_results (test_preprocessing.PreprocessingTests.test_filters_against_known_results) ... ok
+test_isolated_noise_removed (test_preprocessing.PreprocessingTests.test_isolated_noise_removed) ... ok
+test_normalized_float (test_preprocessing.PreprocessingTests.test_normalized_float) ... ok
+test_polarity_equivalence_and_bbox (test_preprocessing.PreprocessingTests.test_polarity_equivalence_and_bbox) ... ok
+test_resize_and_shape (test_preprocessing.PreprocessingTests.test_resize_and_shape) ... ok
+test_translation_invariance (test_preprocessing.PreprocessingTests.test_translation_invariance) ... ok
+test_transparent_background (test_preprocessing.PreprocessingTests.test_transparent_background) ... ok
+test_uniform_rejected (test_preprocessing.PreprocessingTests.test_uniform_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.657s
+
+OK

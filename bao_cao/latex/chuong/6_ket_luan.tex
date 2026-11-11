@@ -1,0 +1,30 @@
+\chapter{Kết luận}
+
+\section{Kết quả đạt được}
+Đề tài đã xây dựng một hệ thống nhận dạng chữ số viết tay và hình học đơn giản hoàn chỉnh từ ảnh đầu vào đến kết quả:
+\begin{itemize}
+\item phần tiền xử lý ảnh tự cài bằng NumPy với các thuật toán của môn học (xám, lọc trung vị, Otsu, hình thái học, thành phần liên thông, nội suy), được kiểm thử bằng tham chiếu độc lập;
+\item CNN chữ số 56\,714 tham số đạt $9915/10\,000$ ($99{,}15\%$) trên tập test MNIST chính thức, cấu hình được chọn bằng validation;
+\item CNN hình học 56\,355 tham số, huấn luyện trên 13\,500 ảnh tổng hợp đa dạng, đạt $2019/2025$ ($99{,}70\%$) trên tập test tổng hợp và $270/300$ ($90{,}0\%$) trên bộ stress;
+\item ứng dụng web cho phép vẽ hoặc tải ảnh, xem kết quả và từng bước tiền xử lý, cùng công cụ thu ảnh thật để đánh giá.
+\end{itemize}
+Phát hiện đáng chú ý nhất của thực nghiệm là \textbf{khâu thu nhỏ ảnh}: nội suy song tuyến tính làm nét mảnh bị rách và CNN nhận sai (hình tròn nét mảnh gần như luôn sai; chữ số nét 1,5\% chiều cao chỉ còn $52{,}7\%$).
+Thu nhỏ theo diện tích kèm kéo giãn độ sáng đưa độ chính xác trung bình trên hình vẽ có rung tay từ $87{,}3\%$ lên $99{,}6\%$ mà không làm kém ảnh nét dày.
+
+\section{Những gì chưa làm được}
+\begin{itemize}
+\item \textbf{Ảnh viết/vẽ tay thật chỉ có từ một người viết}: 58 ảnh chữ số và 43 ảnh hình, đã đủ số lượng tối thiểu nhưng chưa có người viết khác. Trên bộ này chữ số đạt $50/58$ ($86{,}2\%$, khoảng Wilson $[75{,}1;\,92{,}8]\%$), thấp hơn nhiều so với $99{,}15\%$ trên MNIST; hình học đạt $43/43$ (khoảng Wilson $[91{,}8;\,100]\%$). Chỉ có một người viết nên chưa suy ra được độ chính xác chung. Các con số còn lại là MNIST và dữ liệu tổng hợp; các phép thử nét mảnh và hình vẽ Pillow dùng ảnh do chương trình tạo.
+\item Chọn bài toán là thao tác tay; hai mạng không có lớp ``không phải'' nên ảnh sai loại vẫn bị gán một lớp rất tự tin; softmax chưa hiệu chuẩn.
+\item Mỗi cấu hình chỉ huấn luyện với một hạt; các chênh lệch giữa cơ sở và cải tiến chưa đủ ý nghĩa thống kê.
+\item Phép phân ngưỡng toàn cục kém khi nền loang sáng nặng.
+\end{itemize}
+
+\section{Hướng phát triển}
+\label{muc:huongphattrien}
+\begin{enumerate}
+\item Thu thêm ảnh thật từ nhiều người viết/vẽ khác (hiện chỉ có một người, dù đã đủ số lượng tối thiểu), đánh giá bằng \texttt{python3 danh\_gia.py -{}-bai-toan ca\_hai}, rồi khảo sát nguyên nhân chữ số thật kém hơn MNIST (kiểu viết, cách căn chữ, bước giữ thành phần liên thông lớn nhất).
+\item Căn chữ số theo trọng tâm thay vì tâm hộp bao để đường qua tiền xử lý khớp ảnh MNIST hơn (hiện thấp hơn khoảng $1{,}4$ điểm phần trăm trên cùng ảnh).
+\item Phân ngưỡng thích nghi cục bộ cho ảnh chụp có ánh sáng không đều.
+\item Thêm lớp từ chối ``không phải'', hiệu chuẩn softmax, huấn luyện nhiều hạt để có khoảng tin cậy.
+\item Mở rộng tập hình (hình thang, ngũ giác, ngôi sao) và dữ liệu chữ số viết tay của người Việt.
+\end{enumerate}

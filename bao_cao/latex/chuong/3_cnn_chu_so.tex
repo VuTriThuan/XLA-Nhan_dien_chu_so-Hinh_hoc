@@ -1,0 +1,66 @@
+\chapter{CNN nhận dạng chữ số}
+\label{chuong:chuso}
+
+\section{Dữ liệu}
+Dùng MNIST \cite{lecun1998}: 60\,000 ảnh huấn luyện và 10\,000 ảnh kiểm thử chính thức, ảnh xám $28\times28$, chữ số được căn theo trọng tâm. 6\,000 ảnh huấn luyện được tách làm
+tập validation theo phân tầng (hạt 20261109), còn 54\,000 ảnh huấn luyện. 10\,000 ảnh test giữ nguyên và \textbf{không} dùng để chọn mô hình. Đã kiểm tra không có ảnh nào trùng pixel
+giữa các tập. Ảnh được chia cho 255, không trừ mean/chia độ lệch chuẩn.
+
+\hinh{chu_so_xem_truoc.png}{0.55}{Tám ảnh huấn luyện mỗi chữ số (MNIST, không phải ảnh ngoài).}
+
+\section{Kiến trúc}
+Hai khối Conv--ReLU--MaxPool rồi hai tầng kết nối đầy đủ:
+$\text{Conv}(1\to16,3\times3)\to\text{ReLU}\to\text{MaxPool}(2)\to\text{Conv}(16\to32,3\times3)\to\text{ReLU}\to\text{MaxPool}(2)\to\text{Flatten}(800)\to\text{Dropout}(0{,}25)\to\text{Linear}(800\to64)\to\text{ReLU}\to\text{Linear}(64\to10)$,
+tổng cộng \textbf{56\,714} tham số, nhỏ đủ để huấn luyện trên CPU. Mạng trả logits; softmax chỉ dùng khi dự đoán.
+
+\section{Huấn luyện}
+Hàm mất mát cross-entropy, bộ tối ưu Adam \cite{kingma2015} tốc độ học $10^{-3}$, giảm $0{,}3$ lần sau epoch 8 (StepLR), 12 epoch, batch 128, hạt 42, CPU.
+Hai cấu hình giống hệt nhau (cùng kiến trúc, Dropout, hạt, ngân sách) và chỉ khác tăng cường dữ liệu:
+\begin{itemize}
+\item \textbf{cơ sở}: không tăng cường;
+\item \textbf{cải tiến}: biến đổi affine ngẫu nhiên tự cài (xoay $\pm10^{\circ}$, dịch $\pm2$ px, co giãn $[0{,}9;1{,}1]$, nội suy song tuyến tính); không xoay $180^{\circ}$ hay lật vì có thể đổi $6\leftrightarrow9$.
+\end{itemize}
+Mỗi cấu hình lưu epoch có accuracy validation cao nhất (hòa thì loss validation thấp nhất). Cấu hình cuối được chọn \emph{chỉ bằng validation}, trước khi đọc test:
+validation $98{,}88\%$ (cơ sở) và $99{,}02\%$ (cải tiến), nên chọn \textbf{cải tiến}.
+
+\section{Kết quả}
+\begin{table}[H]\centering
+\begin{tabular}{lrrrr}
+\toprule
+Cấu hình & Đúng/10\,000 & Accuracy test & Khoảng Wilson 95\% & F1 macro \\
+\midrule
+Cơ sở & 9\,916 & $99{,}16\%$ & $[98{,}96;\,99{,}32]$ & $99{,}15\%$ \\
+Cải tiến (được chọn) & 9\,915 & $99{,}15\%$ & $[98{,}95;\,99{,}31]$ & $99{,}14\%$ \\
+\bottomrule
+\end{tabular}
+\caption{Kết quả trên 10\,000 ảnh test MNIST chính thức. Khoảng Wilson \cite{wilson1927} chỉ mô tả độ bất định do cỡ mẫu.}
+\end{table}
+
+Hai cấu hình chỉ khác nhau một ảnh. Kiểm định McNemar chính xác \cite{mcnemar1947} trên cùng 10\,000 ảnh: cơ sở sai/cải tiến đúng 37 ảnh, cơ sở đúng/cải tiến sai 38 ảnh, $p=1{,}0$.
+Một hạt và một bộ đánh giá nên \textbf{không kết luận} tăng cường dữ liệu cải thiện độ chính xác trên MNIST chuẩn.
+
+\hinh{chu_so_ma_tran.png}{0.6}{Ma trận nhầm lẫn của cấu hình được chọn trên tập test MNIST.}
+
+Các cặp nhầm lẫn lớn nhất (lớp thật $\to$ lớp đoán): $9\to7$ (7 ảnh), $5\to3$ (6), $9\to4$ (6), $1\to2$ (4), $4\to9$ (4). Đây là các cặp có nét gần nhau, phù hợp với trực giác.
+
+\hinh{chu_so_loi.png}{0.9}{24 trong 85 ảnh sai, softmax cao nhất trước (cấu hình được chọn).}
+
+\section{Chẩn đoán độ bền}
+Để thấy tác dụng của tăng cường dữ liệu, một tập con cố định 1\,000 ảnh test (100 ảnh mỗi chữ số) được biến đổi theo bốn điều kiện. Tập này lấy từ test nên
+\textbf{không độc lập} với test và không dùng để chọn mô hình.
+\begin{table}[H]\centering
+\begin{tabular}{lrrrr}
+\toprule
+Cấu hình & Gốc & Dịch $\pm3$ px & Xoay $\pm20^{\circ}$ & Nhiễu Gauss $\sigma=0{,}15$ \\
+\midrule
+Cơ sở & $99{,}1\%$ & $89{,}6\%$ & $98{,}7\%$ & $99{,}3\%$ \\
+Cải tiến & $99{,}0\%$ & $97{,}7\%$ & $98{,}3\%$ & $98{,}4\%$ \\
+\bottomrule
+\end{tabular}
+\caption{Độ chính xác trên cùng 1\,000 ảnh test sau các biến đổi chẩn đoán.}
+\end{table}
+Tăng cường dữ liệu giúp rõ nhất ở phép dịch ($89{,}6\%\to97{,}7\%$), vì mô hình cơ sở chỉ thấy chữ số căn đúng trọng tâm; nó không tốt hơn ở mọi điều kiện.
+
+\section{Hạn chế}
+Kết quả ở chương này chỉ trên MNIST (một nguồn, một hạt). Trên 58 ảnh chữ số thật của một người viết, mô hình đạt $50/58$ (mục~\ref{muc:thuanh}), thấp hơn nhiều so với MNIST nhưng chỉ có một người viết nên chưa kết luận được; điểm softmax chưa hiệu chuẩn; mạng không từ chối chữ cái, hình học hay ảnh nhiều ký tự.
+Đường vào qua tiền xử lý của hệ thống cho kết quả thấp hơn trên cùng ảnh (mục~\ref{muc:duongtienxuly}).
