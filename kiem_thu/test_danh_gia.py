@@ -92,3 +92,26 @@ def test_tap_chan_doan_chu_so_co_dinh_va_phan_tang():
     chi_so2, dk2 = tap_chan_doan_chu_so(x, y)
     assert np.array_equal(chi_so, chi_so2) and np.array_equal(dieu_kien["dich_3px"], dk2["dich_3px"])
     assert np.array_equal(dieu_kien["goc"][:, 0], x[chi_so, 0])
+
+
+def test_ma_tran_nham_lan_csv_utf8_ca_khi_ma_hoa_mac_dinh_khong_phai_utf8(tmp_path):
+    """Windows mặc định cp1252: tiêu đề tiếng Việt từng làm np.savetxt lỗi UnicodeEncodeError."""
+    import os
+    import subprocess
+    import sys
+    from pathlib import Path
+    goc = Path(__file__).resolve().parents[1]
+    tep = tmp_path / "confusion_matrix.csv"
+    ma = ("import locale\n"
+          "if 'utf' in locale.getpreferredencoding(False).lower(): raise SystemExit(42)\n"
+          "from loi.danh_gia import ghi_ma_tran_nham_lan_csv\n"
+          f"ghi_ma_tran_nham_lan_csv({str(tep)!r}, [[3, 1], [0, 4]])\n")
+    moi_truong = {**os.environ, "LC_ALL": "en_US.ISO8859-1", "LANG": "en_US.ISO8859-1", "PYTHONUTF8": "0"}
+    kq = subprocess.run([sys.executable, "-X", "utf8=0", "-c", ma], cwd=goc, env=moi_truong,
+                        capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if kq.returncode == 42:
+        pytest.skip("máy này không đặt được mã hóa mặc định khác UTF-8")
+    assert kq.returncode == 0, kq.stderr
+    noi_dung = tep.read_text(encoding="utf-8")
+    assert noi_dung.startswith("# hàng = lớp thật") and "3,1" in noi_dung
+    np.testing.assert_array_equal(np.loadtxt(tep, delimiter=",", encoding="utf-8"), [[3, 1], [0, 4]])

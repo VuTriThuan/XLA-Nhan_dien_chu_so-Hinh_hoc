@@ -206,7 +206,7 @@
     }
   ],
   "loss": 0.023960024118423462,
-  "giay_suy_luan": 0.8648036740005409,
+  "giay_suy_luan": 1.5775151519999326,
   "sha256_checkpoint": "6fc0cd4b276c49f9e34e3a4ab18f10c4e5702bfe68cbc5e96ed89cd9c5bdde01",
   "nguon": "tập test, giữ nguyên"
 }

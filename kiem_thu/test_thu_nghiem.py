@@ -35,3 +35,12 @@ def test_ve_hinh_pil_tai_lap_va_co_muc(ho):
     b = ve_hinh_pil(ho, 0.05, np.random.default_rng(1))
     assert np.array_equal(a, b) and a.ndim == 2 and 300 <= a.shape[0] < 500 and (a == 0).any() and (a == 255).any()
     assert LOP[ho] in (0, 1, 2)
+
+
+def test_ve_pil_khong_goi_np_cross_vector_2d(monkeypatch):
+    """np.cross với vector 2D bị bỏ từ NumPy 2.0; tam giác bất kỳ phải vẽ được mà không cần nó."""
+    def cam(*_a, **_k):
+        raise AssertionError("không được gọi np.cross")
+    monkeypatch.setattr(np, "cross", cam)
+    for hat in range(20):
+        assert (ve_hinh_pil("tam_giac_bat_ky", 0.05, np.random.default_rng(hat)) == 0).any()

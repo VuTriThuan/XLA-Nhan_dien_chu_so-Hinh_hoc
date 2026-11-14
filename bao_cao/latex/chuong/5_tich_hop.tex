@@ -9,11 +9,12 @@ Kiểm thử đã chạy máy chủ thật trên cổng tạm cho các luồng n
 
 \section{Đường qua tiền xử lý thống nhất với ảnh MNIST}
 \label{muc:duongtienxuly}
-CNN chữ số được huấn luyện trên ảnh MNIST gốc, vốn căn theo trọng tâm. Ứng dụng lại cắt theo hộp bao, thu phóng về 20 px và căn theo tâm hộp bao. Để đo cái giá của sự khác biệt này,
-cùng 1\,000 ảnh test MNIST (100 ảnh mỗi chữ số) được đưa vào mạng theo hai đường: trực tiếp ($99{,}0\%$) và qua tiền xử lý thống nhất ($97{,}6\%$). Chênh lệch $1{,}4$ điểm phần trăm này là chi phí của việc căn theo hộp bao
-thay vì trọng tâm cộng với phép thu phóng; căn theo trọng tâm cho chữ số là một hướng cải thiện (mục~\ref{muc:huongphattrien}).
+CNN chữ số được huấn luyện trên ảnh MNIST gốc, vốn căn theo trọng tâm. Ứng dụng lại cắt theo hộp bao, thu phóng về 20 px và căn theo tâm hộp bao. Trên cùng 1\,000 ảnh test MNIST (100 ảnh mỗi chữ số),
+đưa trực tiếp vào CNN đạt $99{,}0\%$, qua toàn bộ tiền xử lý thống nhất đạt $97{,}6\%$, giảm $1{,}4$ điểm phần trăm. Phép đo này thay đổi nhiều bước cùng lúc, nên chưa thể quy mức giảm cho riêng cách căn giữa;
+muốn biết phần do cách căn cần so sánh riêng căn theo tâm hộp bao và căn theo trọng tâm trên cùng cấu hình (mục~\ref{muc:huongphattrien}).
 
 \section{Chữ số và hình vẽ nét mảnh}
+\label{muc:netmanh}
 Khi người dùng vẽ bằng bút nhỏ trên khung vẽ lớn, nét chỉ bằng vài phần trăm kích thước đối tượng. Sau khi thu nhỏ về 20--22 px nét còn dưới một pixel; nếu thu nhỏ bằng nội suy song tuyến tính
 nét bị rách và CNN nhận sai. Hai thí nghiệm đo hiện tượng này với ba cấu hình khâu thu nhỏ và chuẩn hóa: \emph{song tuyến tính}, \emph{trung bình theo diện tích} và \emph{diện tích kèm kéo giãn độ sáng}
 (cấu hình mặc định). Cả hai dùng ảnh \textbf{do chương trình tạo}, vì vậy chỉ cho biết mức rủi ro.
@@ -106,5 +107,5 @@ Kết quả cho thấy khoảng cách giữa MNIST và chữ viết tay thật �
 Các ảnh này chỉ dùng để đánh giá, không dùng để huấn luyện hay chỉnh mô hình.
 
 \section{Hạn chế}
-Ngưỡng Otsu toàn cục kém khi nền loang sáng nặng; chọn chữ số hay hình học là thao tác tay và hai mạng không từ chối ảnh sai loại; các thí nghiệm ở chương này dùng ảnh tổng hợp, một hạt và số ảnh vừa phải
-(150 ảnh chữ số, 40 ảnh mỗi ô hình học), nên các chênh lệch vài điểm phần trăm không nên được diễn giải quá mức.
+Ngưỡng Otsu toàn cục kém khi nền loang sáng nặng; chọn chữ số hay hình học là thao tác tay và hai mạng không từ chối ảnh sai loại; các thí nghiệm nét mảnh ở mục~\ref{muc:netmanh} dùng ảnh tổng hợp, một hạt và số ảnh vừa phải
+(150 ảnh chữ số mỗi mức độ dày, 40 ảnh mỗi ô hình học), nên các chênh lệch vài điểm phần trăm không nên được diễn giải quá mức; mục~\ref{muc:thuanh} là phép đánh giá riêng trên ảnh viết/vẽ thật nhưng mới có một người.

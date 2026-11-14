@@ -23,7 +23,7 @@ Thu nhỏ theo diện tích kèm kéo giãn độ sáng đưa độ chính xác 
 \label{muc:huongphattrien}
 \begin{enumerate}
 \item Thu thêm ảnh thật từ nhiều người viết/vẽ khác (hiện chỉ có một người, dù đã đủ số lượng tối thiểu), đánh giá bằng \texttt{python3 danh\_gia.py -{}-bai-toan ca\_hai}, rồi khảo sát nguyên nhân chữ số thật kém hơn MNIST (kiểu viết, cách căn chữ, bước giữ thành phần liên thông lớn nhất).
-\item Căn chữ số theo trọng tâm thay vì tâm hộp bao để đường qua tiền xử lý khớp ảnh MNIST hơn (hiện thấp hơn khoảng $1{,}4$ điểm phần trăm trên cùng ảnh).
+\item Thử căn chữ số theo trọng tâm thay vì tâm hộp bao để đường qua tiền xử lý khớp ảnh MNIST hơn; cần so sánh riêng hai cách căn trên cùng cấu hình để biết cách căn đóng góp bao nhiêu vào mức giảm $1{,}4$ điểm phần trăm (mục~\ref{muc:duongtienxuly}).
 \item Phân ngưỡng thích nghi cục bộ cho ảnh chụp có ánh sáng không đều.
 \item Thêm lớp từ chối ``không phải'', hiệu chuẩn softmax, huấn luyện nhiều hạt để có khoảng tin cậy.
 \item Mở rộng tập hình (hình thang, ngũ giác, ngôi sao) và dữ liệu chữ số viết tay của người Việt.

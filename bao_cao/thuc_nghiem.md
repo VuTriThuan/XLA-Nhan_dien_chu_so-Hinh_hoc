@@ -28,7 +28,7 @@ Chẩn đoán trên cùng 1.000 ảnh test (100/chữ số; **không độc lậ
 | `co_so` | 99,1% | 89,6% | 98,7% | 99,3% |
 | `cai_tien` | 99,0% | 97,7% | 98,3% | 98,4% |
 
-Cùng 1.000 ảnh đi qua tiền xử lý thống nhất (căn theo hộp bao thay vì trọng tâm): 97,6%, so với 99,0% khi đưa thẳng vào mạng.
+Cùng 1.000 ảnh đi qua toàn bộ tiền xử lý thống nhất: 97,6%, so với 99,0% khi đưa thẳng vào mạng (giảm 1,4 điểm phần trăm). Phép đo đổi nhiều bước cùng lúc nên chưa quy được mức giảm cho riêng cách căn theo hộp bao thay vì trọng tâm.
 
 ## 3. Hình học (dữ liệu tổng hợp)
 

@@ -383,6 +383,14 @@ def test_thu_phong_chon_che_do_va_gioi_han():
     assert gioi_han_kich_thuoc(be) is be
 
 
+@pytest.mark.parametrize("kich_thuoc, mong_doi", [((1, 513), (1, 512)), ((513, 1), (512, 1)),
+                                                  ((1, 2000, 3), (1, 512, 3)), ((2, 513), (2, 512))])
+def test_gioi_han_kich_thuoc_anh_mot_hang_hoac_mot_cot(kich_thuoc, mong_doi):
+    a = np.full(kich_thuoc, 90, np.uint8)
+    kq = gioi_han_kich_thuoc(a)
+    assert kq.shape == mong_doi and kq.dtype == np.uint8 and (kq == 90).all()
+
+
 def test_ket_qua_la_dataclass_day_du():
     r = xu_ly_anh(mau_chu_L())
     assert isinstance(r, KetQuaXuLy)

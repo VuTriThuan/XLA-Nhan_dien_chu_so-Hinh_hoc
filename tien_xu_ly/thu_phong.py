@@ -63,7 +63,7 @@ def gioi_han_kich_thuoc(anh, canh_toi_da=512):
     if max(h, w) <= canh_toi_da:
         return a
     ti_le = canh_toi_da / max(h, w)
-    cao, rong = max(2, round(h * ti_le)), max(2, round(w * ti_le))
+    cao, rong = max(1, round(h * ti_le)), max(1, round(w * ti_le))   # ảnh 1×N vẫn hợp lệ
     if a.ndim == 2:
         kq = thu_nho_trung_binh_dien_tich(a, cao, rong)
     else:

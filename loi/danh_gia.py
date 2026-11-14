@@ -21,6 +21,13 @@ YEU_CAU_ANH_THAT = {"chu_so": (50, 5), "hinh_hoc": (30, 10)}     # (tổng tối
 
 
 # ------------------------------------------------------------------------------------ chỉ số
+
+def ghi_ma_tran_nham_lan_csv(duong_dan, ma_tran):
+    """Ghi ma trận nhầm lẫn ra CSV UTF-8 (np.savetxt nhận đường dẫn sẽ dùng mã hóa mặc định, cp1252 trên Windows)."""
+    with Path(duong_dan).open("w", encoding="utf-8", newline="") as f:
+        np.savetxt(f, np.asarray(ma_tran), delimiter=",", fmt="%d",
+                   header="hàng = lớp thật; cột = lớp dự đoán", comments="# ")
+
 def khoang_wilson(dung, n, z=1.959963984540054):
     if not n:
         return [0.0, 0.0]
@@ -336,8 +343,7 @@ def danh_gia(bai_toan, thu_muc_anh_that=None, in_ra=True):
         ghi_json(ra / "test_metrics.json", m)
         np.savez_compressed(ra / "test_predictions.npz", y_that=y, y_du_doan=pred, xac_suat=xs, chi_so=np.arange(len(y)))
         ghi_csv(ra / "per_class_metrics.csv", m["theo_lop"])
-        np.savetxt(ra / "confusion_matrix.csv", np.asarray(m["ma_tran_nham_lan"]), delimiter=",", fmt="%d",
-                   header="hàng = lớp thật; cột = lớp dự đoán", comments="# ")
+        ghi_ma_tran_nham_lan_csv(ra / "confusion_matrix.csv", m["ma_tran_nham_lan"])
         ve_ma_tran_nham_lan(m["ma_tran_nham_lan"], bt, f"{bien_the}: tập test (n={len(y):,})", ra)
         ve_duong_cong_hoc(ra, bien_the)
         ghi_anh_loi(x, y, xs, bt, ra, bien_the, meta_test)

@@ -39,7 +39,8 @@ def diem_hinh(ho, d, rng):
     if ho == "tam_giac_bat_ky":
         while True:
             p = rng.uniform(-d / 2, d / 2, (3, 2))
-            if abs(np.cross(p[1] - p[0], p[2] - p[0])) / 2 > 0.12 * d * d:
+            u, v = p[1] - p[0], p[2] - p[0]
+            if abs(u[0] * v[1] - u[1] * v[0]) / 2 > 0.12 * d * d:      # diện tích; np.cross 2D bị bỏ từ NumPy 2
                 return p, False
     ti_le = rng.uniform(.55, 1) if ho == "chu_nhat_vua" else rng.uniform(.25, .45)
     w = d / math.sqrt(1 + ti_le ** 2)
